@@ -1,7 +1,16 @@
+import { DatePicker, Row, Col, Button, Layout } from 'antd';
+
+const { Header, Content, Sider } = Layout;
+
 const AboutMe = () => (
   <>
-    <div> Picture about me sheeps </div>
-    <div>This is my info right here bro</div>
+    <Layout>
+      <Sider>Picture of myself</Sider>
+      <Layout>
+        <Header>Header</Header>
+        <Content>Content</Content>
+      </Layout>
+    </Layout>
   </>
 );
 
