@@ -1,3 +1,9 @@
-export default function Home() {
-  return <div>something</div>;
-}
+import AboutMe from '@/about/AboutMe';
+
+const Home = () => (
+  <>
+    <AboutMe />
+  </>
+);
+
+export default Home;
