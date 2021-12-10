@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* TODO: Use tailwind instead */
 body {
-    background-color: black;
-    font-family: sans-serif;
+    @apply bg-fixed bg-gradient-to-r from-green to-blue-500
 }
