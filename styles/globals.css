@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* TODO: Use tailwind instead */
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
