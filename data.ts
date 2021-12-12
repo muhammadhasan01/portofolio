@@ -5,21 +5,21 @@ export const services: IService[] = [
   {
     title: 'Title Something 1',
     about: 'About Something 1',
-    icon: RiComputerLine,
+    Icon: RiComputerLine,
   },
   {
     title: 'Title Something 2',
     about: 'About Something 2',
-    icon: RiComputerLine,
+    Icon: RiComputerLine,
   },
   {
-    title: 'Title <b>Something</b> 3',
-    about: 'About Something 3',
-    icon: RiComputerLine,
+    title: 'Title Something 3',
+    about: 'About <b>Something</b>  3',
+    Icon: RiComputerLine,
   },
   {
     title: 'Title Something 4',
     about: 'About Something 4',
-    icon: RiComputerLine,
+    Icon: RiComputerLine,
   },
 ];
