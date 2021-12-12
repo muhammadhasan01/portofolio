@@ -73,6 +73,7 @@ export const tools: ISkill[] = [
 
 export const projectData: IProject[] = [
   {
+    id: 1,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
     imagePath: '/images/compete-hmif-tech-web.png',
@@ -82,6 +83,7 @@ export const projectData: IProject[] = [
     keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
   },
   {
+    id: 2,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
     imagePath: '/images/compete-hmif-tech-web.png',
@@ -91,6 +93,47 @@ export const projectData: IProject[] = [
     keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
   },
   {
+    id: 3,
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
+  {
+    id: 4,
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
+  {
+    id: 5,
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
+  {
+    id: 6,
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
+  {
+    id: 7,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
     imagePath: '/images/compete-hmif-tech-web.png',

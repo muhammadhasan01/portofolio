@@ -18,6 +18,7 @@ const projects = () => {
     const filteredProject = projectData.filter(p => p.category.includes(category));
     setProjectState(filteredProject);
   };
+  const [showDetail, setShowDetail] = useState<number | null>(null);
   return (
     <motion.div
       className='px-5 py-2 overflow-y-scroll'
@@ -40,7 +41,7 @@ const projects = () => {
               className='col-span-12 sm:col-span-6 lg:col-span-4 p-2 bg-gray-200 dark:bg-dark-300 rounded-lg'
               variants={fadeInUp}
             >
-              <ProjectCard project={project} key={project.name} />
+              <ProjectCard project={project} key={project.name} showDetail={showDetail} setShowDetail={setShowDetail} />
             </motion.div>
           ))
         }

@@ -1,6 +1,8 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
+import { GiTie } from 'react-icons/gi';
+
 import Image from 'next/image';
 
 const Sidebar = () => {
@@ -23,6 +25,15 @@ const Sidebar = () => {
         Hasan
       </h3>
       <p className='px-2 py-1 my-3 bg-gray-200 dark:bg-dark-700 rounded-full'>Final Year Student</p>
+      {/* Resume */}
+      <a className='flex items-center justify-center px-2 py-1 my-2
+        bg-gray-200 rounded-full cursor-pointer dark:bg-dark-700'
+         href='/assets/cv-hasan.pdf'
+         download='cv-hasan.pdf'
+      >
+        <GiTie className='w-6 h-6' />
+        <span>Download CV</span>
+      </a>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-green w-9/12 md:w-full mx-auto'>
         <a href='https://github.com/muhammadhasan01' target='_blank'>

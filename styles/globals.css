@@ -9,3 +9,12 @@ body {
     font-family: Lato, sans-serif;
     color: #354358;
 }
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right bottom, #07E363, #0575E6);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
