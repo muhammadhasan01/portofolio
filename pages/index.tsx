@@ -17,7 +17,7 @@ const index = () => {
           {
             services.map(service => (
               <div className='lg:col-span-1 bg-gray-200 dark:bg-dark-900 rounded-lg'>
-                <ServiceCard service={service} />
+                <ServiceCard service={service} key={service.title} />
               </div>
             ))
           }
