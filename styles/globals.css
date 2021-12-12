@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 body {
-    @apply bg-fixed bg-gradient-to-r from-green to-blue-500
+    font-family: sans-serif;
 }
