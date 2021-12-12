@@ -1,7 +1,12 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
+import { useTheme } from 'next-themes';
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+  const changeTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
   return (
     <div>
       <img
@@ -13,7 +18,7 @@ const Sidebar = () => {
         <span className='text-green'>Muhammad </span>
         Hasan
       </h3>
-      <p className='px-2 py-1 my-3 bg-gray-200 rounded-full'>Final Year Student</p>
+      <p className='px-2 py-1 my-3 bg-gray-200 dark:bg-dark-700 rounded-full'>Final Year Student</p>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-green w-9/12 md:w-full mx-auto'>
         <a href='https://github.com/muhammadhasan01' target='_blank'>
@@ -24,7 +29,7 @@ const Sidebar = () => {
         </a>
       </div>
       {/*  Address */}
-      <div className='my-5 py-4 bg-gray-200' style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
+      <div className='my-5 py-4 bg-gray-200 dark:bg-dark-700' style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation />
           <span>Bandung, Indonesia</span>
@@ -39,8 +44,10 @@ const Sidebar = () => {
       >Email Me
       </button>
       <button
-        className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'>Toggle
-        Theme
+        className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'
+        onClick={changeTheme}
+      >
+        Toggle Theme
       </button>
     </div>
   );

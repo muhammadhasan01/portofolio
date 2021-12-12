@@ -8,7 +8,7 @@ const index = () => {
         I am Hasan, a Final Year Informatics Student at Institut Teknologi Bandung. I like doing programming and
         learning Software Engineering.
       </h5>
-      <div className='p-4 mt-5 bg-gray-400 flex-grow'
+      <div className='p-4 mt-5 bg-gray-400 dark:bg-dark-700 flex-grow'
            style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}>
         <h6 className='my-3 font-bold text-xl text-center tracking-wide'>
           What I Offer
@@ -16,7 +16,7 @@ const index = () => {
         <div className='grid lg:grid-cols-2 gap-6'>
           {
             services.map(service => (
-              <div className='lg:col-span-1 bg-gray-200 rounded-lg'>
+              <div className='lg:col-span-1 bg-gray-200 dark:bg-dark-900 rounded-lg'>
                 <ServiceCard service={service} />
               </div>
             ))
