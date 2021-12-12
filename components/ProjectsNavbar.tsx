@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { Category } from '../type';
-import Navbar from './Navbar';
 
 export const NavItem: FunctionComponent<{
   value: Category | 'all',

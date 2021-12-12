@@ -3,6 +3,8 @@ import { IProject } from '../type';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 
+import Image from 'next/image';
+
 const ProjectCard: FunctionComponent<{
   project: IProject
 }> = ({
@@ -15,14 +17,29 @@ const ProjectCard: FunctionComponent<{
 
   return (
     <div>
-      <img src={imagePath} alt={name} className='cursor-pointer' onClick={() => setShowDetail(true)} />
+      <Image
+        src={imagePath}
+        alt={name}
+        className='cursor-pointer'
+        onClick={() => setShowDetail(true)}
+        width='300'
+        height='200'
+        layout='responsive'
+      />
       <p className='my-2 text-center'>{name}</p>
       {
         showDetail &&
         <div className='grid md:grid-cols-2 absolute top-0 left-0 z-10
           h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-3'>
           <div>
-            <img src={imagePath} alt={name} />
+            {/*<img src={imagePath} alt={name} />*/}
+            <Image
+              src={imagePath}
+              alt={name}
+              layout='responsive'
+              height='300'
+              width='400'
+            />
             <div className='flex justify-center my-4 space-x-3'>
               <a href={githubUrl} target='_blank'
                  className='flex items-center px-4 py-2 space-x-3 bg-gray-200 dark:bg-dark-300'>
