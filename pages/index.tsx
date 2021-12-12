@@ -1,9 +1,16 @@
 import { services } from '../data';
 import ServiceCard from '../components/ServiceCard';
+import { motion } from 'framer-motion';
+import { fadeInUp, routeAnimation } from '../animations';
 
 const index = () => {
   return (
-    <div className='flex flex-col px-6 pt-1 flex-grow'>
+    <motion.div className='flex flex-col px-6 pt-1 flex-grow'
+                variants={routeAnimation}
+                initial='initial'
+                animate='animate'
+                exit='exit'
+    >
       <h5 className='my-3 font-medium text-base'>
         I am Hasan, a Final Year Informatics Student at Institut Teknologi Bandung. I like doing programming and
         learning Software Engineering.
@@ -16,14 +23,15 @@ const index = () => {
         <div className='grid lg:grid-cols-2 gap-6'>
           {
             services.map(service => (
-              <div className='lg:col-span-1 bg-gray-200 dark:bg-dark-900 rounded-lg'>
+              <motion.div variants={fadeInUp} initial='initial' animate='animate'
+                          className='lg:col-span-1 bg-gray-200 dark:bg-dark-900 rounded-lg'>
                 <ServiceCard service={service} key={service.title} />
-              </div>
+              </motion.div>
             ))
           }
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
