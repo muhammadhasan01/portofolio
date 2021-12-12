@@ -1,5 +1,5 @@
 import { RiComputerLine } from 'react-icons/ri';
-import { IService, ISkill } from './type';
+import { IProject, IService, ISkill } from './type';
 import { BsCircleFill } from 'react-icons/bs';
 
 export const services: IService[] = [
@@ -68,5 +68,35 @@ export const tools: ISkill[] = [
     name: 'Tool 3',
     level: '50%',
     Icon: BsCircleFill,
-  }
+  },
+];
+
+export const projectData: IProject[] = [
+  {
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
+  {
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
+  {
+    name: 'Compete HMIF Tech',
+    description: 'This is a website to give competition materials',
+    imagePath: '/images/compete-hmif-tech-web.png',
+    deployedUrl: 'https://compete.hmif.tech/',
+    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    category: ['react'],
+    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+  },
 ];
