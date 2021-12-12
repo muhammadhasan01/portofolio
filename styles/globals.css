@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 @tailwind base;
@@ -5,5 +6,6 @@
 @tailwind utilities;
 
 body {
-    font-family: sans-serif;
+    font-family: Lato, sans-serif;
+    color: #354358;
 }
