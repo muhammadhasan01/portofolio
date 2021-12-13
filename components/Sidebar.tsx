@@ -19,7 +19,7 @@ const Sidebar = () => {
         <Image
           src='/images/mypicture.jpg'
           alt='image profile'
-          className='w-32 h-32 rounded-full mx-auto border-cnc-yellow'
+          className='w-32 h-32 rounded-full mx-auto'
           height='150'
           width='150'
           quality='100'
@@ -28,7 +28,7 @@ const Sidebar = () => {
       <h3 className='my-4 text-3xl font-bold text-cnc-yellow tracking-wider font-montserrat'>
         Muhammad Hasan
       </h3>
-      <div className='flex flex-col space-y-3'>
+      <div className='flex flex-col'>
         <p
           className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800 dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-700 rounded-full'>
           <FaGraduationCap className='mx-1' size={20} />
@@ -85,8 +85,8 @@ const Sidebar = () => {
         py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-700 focus:outline-none'
           onClick={changeTheme}
         >
-          {theme === 'light' ?
-            <BsFillMoonFill size={20} /> : <BsSunFill size={20} />
+          {theme === 'dark' ?
+            <BsSunFill size={20} /> : <BsFillMoonFill size={20} />
           }
           <span className='mx-1'>Toggle Theme</span>
         </button>
