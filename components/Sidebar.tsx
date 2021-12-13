@@ -29,10 +29,10 @@ const Sidebar = () => {
       <a className='flex items-center justify-center px-2 py-1 my-2
         bg-gray-200 rounded-full cursor-pointer dark:bg-dark-700'
          href='/assets/cv-hasan.pdf'
-         download='cv-hasan.pdf'
+         target="_blank"
       >
         <GiTie className='w-6 h-6' />
-        <span>Download CV</span>
+        <span>View CV</span>
       </a>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-green w-9/12 md:w-full mx-auto'>
