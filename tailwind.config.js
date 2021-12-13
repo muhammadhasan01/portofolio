@@ -17,6 +17,8 @@ module.exports = {
         green: {
           DEFAULT: '#07E363',
         },
+        'hmif-yellow': '#F8C033',
+        'cnc-yellow': '#F5CC2C',
         dark: {
           DEFAULT: '#010101',
           100: '#0A0B0E',
