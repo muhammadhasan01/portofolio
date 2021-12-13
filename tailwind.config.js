@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       montserrat: ['Montserrat', 'Open Sans'],
+      description: ['Helvetica', 'sans-serif']
     },
     boxShadow: {
       'custom-light': ' 0 0 10px #313131',

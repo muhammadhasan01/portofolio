@@ -14,7 +14,8 @@ function MyApp({ Component, pageProps, router }) {
           <Sidebar />
         </div>
         <div
-          className='lg:col-span-9 bg-white rounded-2xl col-span-12 dark:bg-dark-900 flex flex-col overflow-hidden shadow-custom-light dark:shadow-custom-dark'>
+          className='lg:col-span-9 bg-orange-800 text-orange-100 rounded-2xl col-span-12 dark:bg-dark-900 flex
+          flex-col overflow-hidden shadow-custom-light dark:shadow-custom-dark'>
           <Navbar />
           <AnimatePresence exitBeforeEnter>
             <Component {...pageProps} key={router.route} />
