@@ -1,7 +1,10 @@
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
-import { GiTie } from 'react-icons/gi';
+import { FaGraduationCap } from 'react-icons/fa';
+import { TiDocumentText } from 'react-icons/ti';
+import { SiGmail } from 'react-icons/si';
+import { BsFillMoonFill, BsSunFill } from 'react-icons/bs';
 
 import Image from 'next/image';
 
@@ -12,58 +15,82 @@ const Sidebar = () => {
   };
   return (
     <div>
-      <Image
-        src='/images/mypicture.jpg'
-        alt='image profile'
-        className='w-32 h-32 rounded-full mx-auto'
-        height='128'
-        width='128'
-        quality='100'
-      />
-      <h3 className='my-4 text-3xl font-medium tracking-wider font-montserrat'>
-        <span className='text-green'>Muhammad </span>
-        Hasan
+      <div className='mt-2'>
+        <Image
+          src='/images/mypicture.jpg'
+          alt='image profile'
+          className='w-32 h-32 rounded-full mx-auto'
+          height='150'
+          width='150'
+          quality='100'
+        />
+      </div>
+      <h3 className='my-4 text-3xl font-bold text-cnc-yellow tracking-wider font-montserrat'>
+        Muhammad Hasan
       </h3>
-      <p className='px-2 py-1 my-3 bg-gray-200 dark:bg-dark-700 rounded-full'>Final Year Student</p>
-      {/* Resume */}
-      <a className='flex items-center justify-center px-2 py-1 my-2
-        bg-gray-200 rounded-full cursor-pointer dark:bg-dark-700'
-         href='/assets/cv-hasan.pdf'
-         target='_blank'
-      >
-        <GiTie className='w-6 h-6' />
-        <span>View CV</span>
-      </a>
+      <div className='flex flex-col'>
+        <p
+          className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800 dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-700 rounded-full'>
+          <FaGraduationCap className='mx-1' size={20} />
+          <span>Final Year Student</span></p>
+        {/* Resume */}
+        <a className='flex items-center justify-center px-2 py-2 my-2
+        bg-cnc-yellow rounded-full text-orange-800 font-semibold
+        dark:text-cnc-yellow border-2 border-red-800 dark:border-cnc-yellow cursor-pointer dark:bg-dark-700'
+           href='/assets/cv-hasan.pdf'
+           target='_blank'
+        >
+          <TiDocumentText className='mx-1' size={25} />
+          <span>View CV</span>
+        </a>
+      </div>
       {/*Social Icons*/}
-      <div className='flex justify-around my-5 text-green w-9/12 md:w-full mx-auto'>
+      <div className='flex justify-around my-5 text-cnc-yellow w-9/12 md:w-full mx-auto'>
         <a href='https://github.com/muhammadhasan01' target='_blank' aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
         <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' aria-label='linkedin'>
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
+        <a href='https://www.instagram.com/muhammadhasan01/' target='_blank' aria-label='linkedin'>
+          <AiFillInstagram className='w-8 h-8 cursor-pointer' />
+        </a>
       </div>
+
       {/*  Address */}
-      <div className='my-5 py-4 bg-gray-200 dark:bg-dark-700' style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
+      <div
+        className='my-5 py-4 bg-cnc-yellow flex items-center justify-center flex-col space-y-2 font-semibold text-orange-800 dark:text-cnc-yellow dark:bg-dark-700'
+        style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
-          <GoLocation />
+          <GoLocation size={18} />
           <span>Bandung, Indonesia</span>
         </div>
-        <p className='my-2'>muhammadhasan50@gmail.com</p>
-        <p className='my-2'>+62-859-5606-4292</p>
+        <div className='flex items-center justify-center space-x-2'>
+          <AiFillPhone size={18} />
+          <span>+62-859-5606-4292</span>
+        </div>
       </div>
       {/*  Email Button */}
-      <button
-        className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none'
-        onClick={() => window.open('mailto:muhammadhasan50@gmail.com')}
-      >Email Me
-      </button>
-      <button
-        className='bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2'
-        onClick={changeTheme}
-      >
-        Toggle Theme
-      </button>
+      <div className='flex flex-col space-y-3'>
+        <button
+          className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full
+        py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-700 focus:outline-none'
+          onClick={() => window.open('mailto:muhammadhasan50@gmail.com')}
+        >
+          <SiGmail className='mx-2' size={20} />
+          <span>Email Me</span>
+        </button>
+        <button
+          className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full
+        py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-700 focus:outline-none'
+          onClick={changeTheme}
+        >
+          {theme === 'dark' ?
+            <BsSunFill size={20} /> : <BsFillMoonFill size={20} />
+          }
+          <span className='mx-1'>Toggle Theme</span>
+        </button>
+      </div>
     </div>
   );
 };
