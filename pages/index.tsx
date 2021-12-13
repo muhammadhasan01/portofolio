@@ -3,6 +3,8 @@ import ServiceCard from '../components/ServiceCard';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation } from '../animations';
 
+import Head from 'next/head';
+
 const index = () => {
   return (
     <motion.div className='flex flex-col px-6 pt-1 flex-grow'
@@ -11,6 +13,11 @@ const index = () => {
                 animate='animate'
                 exit='exit'
     >
+      <Head>
+        <title>
+          Hasan's Portfolio Website | About
+        </title>
+      </Head>
       <h5 className='my-3 font-medium text-base'>
         I am Hasan, a Final Year Informatics Student at Institut Teknologi Bandung. I like doing programming and
         learning Software Engineering.

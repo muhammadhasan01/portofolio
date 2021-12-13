@@ -5,6 +5,7 @@ import ProjectsNavbar from '../components/ProjectsNavbar';
 import { Category, IProject } from '../type';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animations';
+import Head from 'next/head';
 
 const projects = () => {
   const [projectState, setProjectState] = useState<IProject[]>(projectData);
@@ -28,6 +29,11 @@ const projects = () => {
       animate='animate'
       exit='exit'
     >
+      <Head>
+        <title>
+          Hasan's Portfolio Website | Projects
+        </title>
+      </Head>
       <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
       <motion.div
         className='grid grid-cols-12 gap-4 my-3 relative'
