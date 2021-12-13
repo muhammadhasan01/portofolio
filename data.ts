@@ -1,27 +1,32 @@
 import { RiComputerLine } from 'react-icons/ri';
 import { IProject, IService, ISkill } from './type';
-import { BsCircleFill } from 'react-icons/bs';
+import { BsCircleFill, BsCreditCard2FrontFill } from 'react-icons/bs';
+import { SiCodeforces } from 'react-icons/si';
+import { ImDatabase } from 'react-icons/im';
+import { MdExplore } from 'react-icons/md';
 
 export const services: IService[] = [
   {
-    title: 'Title Something 1',
-    about: 'About Something 1',
-    Icon: RiComputerLine,
+    title: 'Competitive Programming',
+    about: 'I like to compete in programming,' +
+      ' it\'s fun to learn and getting better at algorithms, data structure, and mostly problem solving',
+    Icon: SiCodeforces,
   },
   {
-    title: 'Title Something 2',
-    about: 'About Something 2',
-    Icon: RiComputerLine,
+    title: 'Backend Development',
+    about: 'I focus primarily on backend development. I have worked on several projects on the backend side, ' +
+      'I think it\'s fun managing all sort of data in the background',
+    Icon: ImDatabase,
   },
   {
-    title: 'Title Something 3',
-    about: 'About <b>Something</b>  3',
-    Icon: RiComputerLine,
+    title: 'Frontend Development',
+    about: 'I like to try frontend development too, it\'s fun to code frontend and deliver a great design interface and experience for users',
+    Icon: BsCreditCard2FrontFill,
   },
   {
-    title: 'Title Something 4',
-    about: 'About Something 4',
-    Icon: RiComputerLine,
+    title: 'Exploring Tech & Development Stuff',
+    about: 'I like to explore all sort of tech and development stuff, anything that grasp my interest, I\'ll try to explore it',
+    Icon: MdExplore,
   },
 ];
 

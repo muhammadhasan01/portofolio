@@ -11,7 +11,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to right bottom, #07E363, #0575E6);
+    background-image: linear-gradient(to right bottom, rgba(241, 5, 5, 0.8), #ffb601);
 }
 
 ::-webkit-scrollbar {

@@ -10,11 +10,11 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({ service: { abou
   }
 
   return (
-    <div className='p-2 flex items-center space-x-4'>
-      <Icon className='w-12 h-12 text-green' />
-      <div>
-        <h5 className='font-bold'>{title}</h5>
-        <p dangerouslySetInnerHTML={createMarkup()} />
+    <div className='p-3 grid grid-cols-12 flex items-center space-x-4'>
+      <Icon className='w-full col-span-2 text-cnc-yellow' size={50} />
+      <div className='col-span-10 pb-2'>
+        <h5 className='font-bold text-yellow-400'>{title}</h5>
+        <p className='text-orange-100' dangerouslySetInnerHTML={createMarkup()} />
       </div>
     </div>
   );
