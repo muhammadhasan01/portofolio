@@ -29,17 +29,17 @@ const Sidebar = () => {
       <a className='flex items-center justify-center px-2 py-1 my-2
         bg-gray-200 rounded-full cursor-pointer dark:bg-dark-700'
          href='/assets/cv-hasan.pdf'
-         target="_blank"
+         target='_blank'
       >
         <GiTie className='w-6 h-6' />
         <span>View CV</span>
       </a>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-green w-9/12 md:w-full mx-auto'>
-        <a href='https://github.com/muhammadhasan01' target='_blank'>
+        <a href='https://github.com/muhammadhasan01' target='_blank' aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank'>
+        <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' aria-label='linkedin'>
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
       </div>
