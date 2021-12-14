@@ -1,26 +1,26 @@
-import { RiComputerLine } from 'react-icons/ri';
 import { IProject, IService, ISkill } from './type';
 import { BsCircleFill, BsCreditCard2FrontFill } from 'react-icons/bs';
-import { SiCodeforces } from 'react-icons/si';
+import { SiCodewars } from 'react-icons/si';
 import { ImDatabase } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
+import { FaLaptopCode } from 'react-icons/fa';
 
 export const services: IService[] = [
   {
     title: 'Competitive Programming',
     about: 'I like to compete in programming,' +
       ' it\'s fun to learn and getting better at algorithms, data structure, and mostly problem solving',
-    Icon: SiCodeforces,
+    Icon: FaLaptopCode,
   },
   {
     title: 'Backend Development',
     about: 'I focus primarily on backend development. I have worked on several projects on the backend side, ' +
-      'I think it\'s fun managing all sort of data in the background',
+      'I think it\'s interesting to manage all sort of data in the background',
     Icon: ImDatabase,
   },
   {
     title: 'Frontend Development',
-    about: 'I like to try frontend development too, it\'s fun to code frontend and deliver a great design interface and experience for users',
+    about: 'I like to try frontend development too, it\'s always a challenge to code frontend side and deliver a great design interface and experience for users',
     Icon: BsCreditCard2FrontFill,
   },
   {

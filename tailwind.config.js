@@ -18,6 +18,11 @@ module.exports = {
         green: {
           DEFAULT: '#07E363',
         },
+        wood: {
+          DEFAULT: '#563232',
+          white: '#e7cfb4',
+          red: '#84240c'
+        },
         'hmif-yellow': '#F8C033',
         'cnc-yellow': '#F5CC2C',
         dark: {
