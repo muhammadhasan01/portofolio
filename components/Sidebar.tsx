@@ -3,12 +3,14 @@ import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
 import { FaGraduationCap } from 'react-icons/fa';
 import { TiDocumentText } from 'react-icons/ti';
-import { SiGmail } from 'react-icons/si';
+import { SiCodeforces } from 'react-icons/si';
 import { BsFillMoonFill, BsSunFill } from 'react-icons/bs';
+import { GrMail } from 'react-icons/gr';
 
 import Image from 'next/image';
 
 const Sidebar = () => {
+
   const { theme, setTheme } = useTheme();
   const changeTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -25,18 +27,19 @@ const Sidebar = () => {
           quality='100'
         />
       </div>
-      <h3 className='my-4 text-3xl font-bold text-cnc-yellow tracking-wider font-montserrat'>
+      <h3 className='my-4 xl:text-3xl text-2xl font-bold text-cnc-yellow tracking-wider font-montserrat'>
         Muhammad Hasan
       </h3>
       <div className='flex flex-col'>
         <p
-          className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800 dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-700 rounded-full'>
+          className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800
+          dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-500 rounded-full'>
           <FaGraduationCap className='mx-1' size={20} />
           <span>Final Year Student</span></p>
         {/* Resume */}
         <a className='flex items-center justify-center px-2 py-2 my-2
         bg-cnc-yellow rounded-full text-orange-800 font-semibold
-        dark:text-cnc-yellow border-2 border-red-800 dark:border-cnc-yellow cursor-pointer dark:bg-dark-700'
+        dark:text-cnc-yellow border-2 border-red-800 dark:border-cnc-yellow cursor-pointer dark:bg-dark-500'
            href='/assets/cv-hasan.pdf'
            target='_blank'
         >
@@ -46,6 +49,9 @@ const Sidebar = () => {
       </div>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-cnc-yellow w-9/12 md:w-full mx-auto'>
+        <a href='https://codeforces.com/profile/m.hasan01' target='_blank' aria-label='codeforces'>
+          <SiCodeforces className='w-8 h-8 cursor-pointer' />
+        </a>
         <a href='https://github.com/muhammadhasan01' target='_blank' aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
@@ -73,22 +79,22 @@ const Sidebar = () => {
       {/*  Email Button */}
       <div className='flex flex-col space-y-3'>
         <button
-          className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full
-        py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-700 focus:outline-none'
+          className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full border-2 border-red-800 dark:border-cnc-yellow
+        py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-500 focus:outline-none'
           onClick={() => window.open('mailto:muhammadhasan50@gmail.com')}
         >
-          <SiGmail className='mx-2' size={20} />
+          <GrMail className='mx-2' size={22} />
           <span>Email Me</span>
         </button>
         <button
-          className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full
-        py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-700 focus:outline-none'
+          className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full border-2 border-red-800 dark:border-cnc-yellow
+        py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-500 focus:outline-none'
           onClick={changeTheme}
         >
           {theme === 'dark' ?
             <BsSunFill size={20} /> : <BsFillMoonFill size={20} />
           }
-          <span className='mx-1'>Toggle Theme</span>
+          <span className='mx-2'>Toggle Theme</span>
         </button>
       </div>
     </div>
