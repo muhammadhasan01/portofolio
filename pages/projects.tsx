@@ -31,7 +31,7 @@ const projects = () => {
     >
       <Head>
         <title>
-          Hasan's Portfolio Website | Projects
+          Hasan's Personal Website | Projects
         </title>
       </Head>
       <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />

@@ -15,7 +15,7 @@ const index = () => {
     >
       <Head>
         <title>
-          Hasan's Portfolio Website | About
+          Hasan's Personal Website | About
         </title>
       </Head>
       <h5 className='mb-3 font-medium'>

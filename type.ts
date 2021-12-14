@@ -23,4 +23,15 @@ export interface IProject {
   keyTechs: string[]
 }
 
+export interface IEducation {
+  school: string,
+  major: string,
+  SchoolIcon: IconType,
+  schoolIconSize: number,
+  MajorIcon: IconType,
+  majorIconSize: number,
+  duration: string,
+  description: string | null
+}
+
 export type Category = "react" | "node" | "express" | "django" | "mongo";

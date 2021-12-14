@@ -1,9 +1,9 @@
-import { IProject, IService, ISkill } from './type';
-import { BsCircleFill, BsCreditCard2FrontFill } from 'react-icons/bs';
-import { SiCodewars } from 'react-icons/si';
+import { IEducation, IProject, IService, ISkill } from './type';
+import { BsCircleFill, BsCreditCard2FrontFill, BsLaptop, BsStarFill } from 'react-icons/bs';
 import { ImDatabase } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
 import { FaLaptopCode } from 'react-icons/fa';
+import { GiMaterialsScience, GiElephant } from 'react-icons/gi';
 
 export const services: IService[] = [
   {
@@ -75,6 +75,30 @@ export const tools: ISkill[] = [
     Icon: BsCircleFill,
   },
 ];
+
+export const educations: IEducation[] = [
+  {
+    school: 'Institut Teknologi Bandung',
+    major: 'Informatics Engineering Student',
+    SchoolIcon: GiElephant,
+    schoolIconSize: 23,
+    MajorIcon: BsLaptop,
+    majorIconSize: 20,
+    duration: '(2018 - 2022)',
+    description: 'I am currently pursuing Bachelor of Engineering in Informatics Engineering Institut Teknologi Bandung',
+  },
+  {
+    school: 'Alfa Centauri SHS',
+    major: 'Mathematics & Science Student',
+    SchoolIcon: BsStarFill,
+    schoolIconSize: 23,
+    MajorIcon: GiMaterialsScience,
+    majorIconSize: 25,
+    duration: '(2015 - 2018)',
+    description: 'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
+  },
+];
+
 
 export const projectData: IProject[] = [
   {

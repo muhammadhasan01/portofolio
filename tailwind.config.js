@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       montserrat: ['Montserrat', 'Open Sans'],
-      description: ['Helvetica', 'sans-serif']
+      description: ['Helvetica', 'sans-serif'],
     },
     boxShadow: {
       'custom-light': ' 0 0 10px #111111',
@@ -21,7 +21,7 @@ module.exports = {
         wood: {
           DEFAULT: '#563232',
           white: '#e7cfb4',
-          red: '#84240c'
+          red: '#84240c',
         },
         'hmif-yellow': '#F8C033',
         'cnc-yellow': '#F5CC2C',
@@ -34,6 +34,7 @@ module.exports = {
           700: '#202125',
           800: '#232428',
           900: '#35363D',
+          1000: '#5b5a5a',
         },
       },
     },
