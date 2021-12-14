@@ -38,7 +38,8 @@ const index = () => {
           {
             services.map(service => (
               <motion.div variants={fadeInUp} initial='initial' animate='animate'
-                          className='lg:col-span-1 bg-orange-800 dark:bg-dark-800 text-white rounded-lg'>
+                          className='lg:col-span-1 bg-orange-800 dark:bg-dark-700 text-white
+                          border-2 border-cnc-yellow rounded-lg'>
                 <ServiceCard service={service} key={service.title} />
               </motion.div>
             ))

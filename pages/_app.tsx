@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps, router }) {
           <Sidebar />
         </div>
         <div
-          className='lg:col-span-9 bg-orange-800 text-white rounded-2xl col-span-12 dark:bg-dark-800 flex
+          className='lg:col-span-9 bg-orange-800 text-white rounded-2xl col-span-12 dark:bg-dark-700 flex
           flex-col overflow-hidden border-2 drop-shadow-2xl border-red-900 dark:border-cnc-yellow'>
           <Navbar />
           <AnimatePresence exitBeforeEnter>

@@ -66,7 +66,7 @@ const Sidebar = () => {
       {/*  Address */}
       <div
         className='my-5 py-4 bg-cnc-yellow flex items-center justify-center flex-col space-y-2 font-semibold text-orange-800
-        dark:text-cnc-yellow dark:bg-dark-500'
+        dark:text-cnc-yellow dark:bg-dark'
         style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation size={18} />
