@@ -1,5 +1,5 @@
 import { IEducation, IProject, IService, ISkill } from './type';
-import { BsCircleFill, BsCreditCard2FrontFill, BsLaptop, BsStarFill } from 'react-icons/bs';
+import { BsCircleFill, BsCreditCard2FrontFill, BsLaptop, BsStar, BsStarFill } from 'react-icons/bs';
 import { ImDatabase } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
 import { FaLaptopCode } from 'react-icons/fa';
@@ -38,17 +38,17 @@ export const languages: ISkill[] = [
   },
   {
     name: 'C++',
-    level: '95%',
+    level: '88%',
     Icon: BsCircleFill,
   },
   {
     name: 'Java',
-    level: '80%',
+    level: '70%',
     Icon: BsCircleFill,
   },
   {
     name: 'Javascript',
-    level: '75%',
+    level: '80%',
     Icon: BsCircleFill,
   },
   {
@@ -56,22 +56,19 @@ export const languages: ISkill[] = [
     level: '53%',
     Icon: BsCircleFill,
   },
-];
-
-export const tools: ISkill[] = [
   {
-    name: 'Tool 1',
-    level: '40%',
+    name: 'React',
+    level: '73%',
     Icon: BsCircleFill,
   },
   {
-    name: 'Tool 2',
-    level: '45%',
+    name: 'Java Springboot',
+    level: '63%',
     Icon: BsCircleFill,
   },
   {
-    name: 'Tool 3',
-    level: '50%',
+    name: 'ExpressJS',
+    level: '65%',
     Icon: BsCircleFill,
   },
 ];
@@ -95,7 +92,18 @@ export const educations: IEducation[] = [
     MajorIcon: GiMaterialsScience,
     majorIconSize: 25,
     duration: '(2015 - 2018)',
-    description: 'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
+    description: 'Got the Highest National Senior High School Exam on Batch 2015. ' +
+      'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
+  },
+  {
+    school: 'Alfa Centauri JHS',
+    major: 'Science Student',
+    SchoolIcon: BsStar,
+    schoolIconSize: 23,
+    MajorIcon: GiMaterialsScience,
+    majorIconSize: 25,
+    duration: '(2012 - 2015)',
+    description: 'Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
   },
 ];
 
