@@ -131,38 +131,12 @@ export const experiences: IExperience[] = [
   },
 ];
 
-/*export const experiences: IExperience[] = [
-  {
-    company: 'Traveloka',
-    role: 'Backend Engineer Intern',
-    duration: '(Aug. 2021 - Present)',
-    description: 'Working on Software API Testing using Karate Framework, Mountebank, and AWS.',
-    Icon: ImAirplane,
-  },
-  {
-    company: 'Sayurbox',
-    role: 'Software Developer Engineer Intern',
-    duration: '(May. 2021 - Aug. 2021)',
-    description: 'Mainly Working on Backend services using Java ' +
-      'Spring Boot, MySQL, MongoDB, Jenkins, and OKD.',
-    Icon: GiFruitBowl,
-  },
-  {
-    company: 'Pinhome',
-    role: 'Software Engineer Intern',
-    duration: '(Jan. 2021 - Mar. 2021)',
-    description: 'Created backend services for CMS (Content Management System) to ' +
-      'deliver forum threads within the internal people. Created using Golang, PostgreSQL, GORM and Kubernetes',
-    Icon: AiOutlineHome,
-  },
-];*/
-
 export const projectData: IProject[] = [
   {
     id: 1,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
@@ -172,7 +146,7 @@ export const projectData: IProject[] = [
     id: 2,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
@@ -182,7 +156,7 @@ export const projectData: IProject[] = [
     id: 3,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
@@ -192,7 +166,7 @@ export const projectData: IProject[] = [
     id: 4,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
@@ -202,7 +176,7 @@ export const projectData: IProject[] = [
     id: 5,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
@@ -212,7 +186,7 @@ export const projectData: IProject[] = [
     id: 6,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
@@ -222,7 +196,7 @@ export const projectData: IProject[] = [
     id: 7,
     name: 'Compete HMIF Tech',
     description: 'This is a website to give competition materials',
-    imagePath: '/images/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     category: ['react'],
