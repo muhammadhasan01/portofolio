@@ -17,13 +17,14 @@ const Sidebar = () => {
   };
   return (
     <div>
-      <div className='mt-2'>
+      <div className='relative border-4 border-red-900 dark:border-cnc-yellow w-36 h-36 rounded-full mx-auto'
+      >
         <Image
           src='/images/mypicture.jpg'
           alt='image profile'
-          className='w-32 h-32 rounded-full mx-auto'
-          height='150'
-          width='150'
+          className='rounded-full'
+          height='160'
+          width='160'
           quality='100'
         />
       </div>

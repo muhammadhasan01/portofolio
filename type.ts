@@ -23,13 +23,11 @@ export interface IProject {
   keyTechs: string[]
 }
 
-export interface IEducation {
-  school: string,
-  major: string,
-  SchoolIcon: IconType,
-  schoolIconSize: number,
-  MajorIcon: IconType,
-  majorIconSize: number,
+export interface IExperience {
+  company: string,
+  role: string,
+  CompanyIcon: IconType,
+  companyIconSize: number,
   duration: string,
   description: string | null
 }
