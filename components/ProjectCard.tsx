@@ -36,7 +36,7 @@ const ProjectCard: FunctionComponent<{
       {
         showDetail === id &&
         <div className='grid md:grid-cols-2 absolute top-0 left-0 z-10
-          h-auto w-full gap-x-12 text-black bg-gray-100 dark:text-white dark:bg-dark-100 p-3
+          h-auto w-full gap-x-12 text-black bg-gray-200 dark:text-white dark:bg-dark-100 p-3
           md:p-10 rounded-lg'>
           <motion.div variants={stagger} initial='initial' animate='animate'>
             <motion.div variants={fadeInUp} className='border-4 border-gray-700'>

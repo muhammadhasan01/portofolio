@@ -22,7 +22,7 @@ const projects = () => {
   const [showDetail, setShowDetail] = useState<number | null>(null);
   return (
     <motion.div
-      className='px-5 py-2 overflow-y-scroll'
+      className='px-5 py-2 overflow-y-auto'
       style={{ height: '65vh' }}
       variants={routeAnimation}
       initial='initial'
@@ -44,7 +44,7 @@ const projects = () => {
         {
           projectState.map(project => (
             <motion.div
-              className='col-span-12 sm:col-span-6 lg:col-span-4 p-2 bg-gray-200 dark:bg-dark-300 rounded-lg'
+              className='col-span-12 sm:col-span-6 lg:col-span-4 p-2 bg-cnc-yellow dark:bg-dark-300 rounded-lg'
               variants={fadeInUp}
             >
               <ProjectCard project={project} key={project.name} showDetail={showDetail} setShowDetail={setShowDetail} />

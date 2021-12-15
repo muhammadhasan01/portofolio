@@ -30,7 +30,8 @@ const index = () => {
         I hope to become better every day, bit by bit <br />
       </h5>
       <div className='p-4 mt-5 bg-yellow-500 dark:bg-dark-500 flex-grow'
-           style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}>
+           style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}
+      >
         <h6 className='my-5 text-2xl lg:text-3xl font-black text-orange-800 dark:text-cnc-yellow font-montserrat text-center tracking-wide'>
           My Activities
         </h6>

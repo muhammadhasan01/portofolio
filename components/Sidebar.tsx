@@ -17,13 +17,14 @@ const Sidebar = () => {
   };
   return (
     <div>
-      <div className='mt-2'>
+      <div className='relative border-4 border-red-900 dark:border-cnc-yellow w-36 h-36 rounded-full mx-auto'
+      >
         <Image
           src='/images/mypicture.jpg'
           alt='image profile'
-          className='w-32 h-32 rounded-full mx-auto'
-          height='150'
-          width='150'
+          className='rounded-full'
+          height='160'
+          width='160'
           quality='100'
         />
       </div>
@@ -66,7 +67,7 @@ const Sidebar = () => {
       {/*  Address */}
       <div
         className='my-5 py-4 bg-cnc-yellow flex items-center justify-center flex-col space-y-2 font-semibold text-orange-800
-        dark:text-cnc-yellow dark:bg-dark'
+        dark:text-cnc-yellow dark:bg-dark border-y-2 border-orange-800 dark:border-cnc-yellow'
         style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation size={18} />
@@ -92,7 +93,7 @@ const Sidebar = () => {
         py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-500 focus:outline-none'
           onClick={changeTheme}
         >
-          {theme === 'dark' ?
+          {theme === 'light' ?
             <BsSunFill size={20} /> : <BsFillMoonFill size={20} />
           }
           <span className='mx-2'>Toggle Theme</span>
