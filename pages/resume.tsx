@@ -59,7 +59,7 @@ const resume = () => {
         <div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'
                       className='bg-cnc-yellow dark:bg-dark-500 p-5 border-2 border-cnc-yellow
-                      rounded-2xl text-orange-800 dark:text-cnc-yellow'
+                      rounded-2xl text-orange-800 dark:text-cnc-yellow -mt-5 mb-3 lg:my-1'
           >
             <div className='py-2 text-2xl font-bold flex justify-left items-center'>
               <MdWork className='mr-2' size={25} />
