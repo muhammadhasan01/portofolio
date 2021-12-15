@@ -18,18 +18,18 @@ const index = () => {
           Hasan's Personal Website | About
         </title>
       </Head>
-      <h5 className='mb-3 font-medium'>
+      <div className='mb-3 font-medium lg:text-lg'>
         Hello! My name is Hasan, I am very passionate in learning programming and software
         engineering <br />
 
         I like doing programming competitions because it hones my programming skill and problem solving
         skills <br />
 
-        In my free time, I like to explore all sort of stuff about software engineering, it's a never
+        In my free time, I like to explore all sort of stuff about software engineering. It's a never
         ending journey and
         I hope to become better every day, bit by bit <br />
-      </h5>
-      <div className='p-4 mt-5 bg-yellow-500 dark:bg-dark-500 flex-grow'
+      </div>
+      <div className='p-4 mt-5 bg-yellow-500 dark:bg-dark-500 flex-grow border-t-4 border-cnc-yellow'
            style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}
       >
         <h6 className='my-5 text-2xl lg:text-3xl font-black text-orange-800 dark:text-cnc-yellow font-montserrat text-center tracking-wide'>
