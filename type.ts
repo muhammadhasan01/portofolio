@@ -32,4 +32,11 @@ export interface IExperience {
   description: string | null
 }
 
+export interface IAchievement {
+  title: string,
+  issuedBy: string,
+  description: string | null,
+  Icon: IconType
+}
+
 export type Category = "react" | "node" | "express" | "django" | "mongo";
