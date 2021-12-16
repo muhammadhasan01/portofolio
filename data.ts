@@ -1,8 +1,8 @@
-import { IExperience, IProject, IService, ISkill } from './type';
+import { IAchievement, IExperience, IProject, IService, ISkill } from './type';
 import { BsCircleFill, BsCreditCard2FrontFill, BsStar, BsStarFill } from 'react-icons/bs';
 import { ImDatabase, ImAirplane } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
-import { FaLaptopCode } from 'react-icons/fa';
+import { FaLaptopCode, FaMedal, FaTrophy, FaGlobe } from 'react-icons/fa';
 import { AiFillHome } from 'react-icons/ai';
 import { GiElephant, GiFruitBowl } from 'react-icons/gi';
 
@@ -128,6 +128,58 @@ export const experiences: IExperience[] = [
     duration: '(Jan. 2021 - Mar. 2021)',
     description: 'Created backend services for CMS (Content Management System) to ' +
       'deliver forum threads within the internal people. Created using Golang, PostgreSQL, GORM and Kubernetes',
+  },
+];
+
+export const achievements: IAchievement[] = [
+  {
+    title: 'National Gold Medalist ICPC 2020<br/>Asia Jakarta Regional',
+    issuedBy: 'BINUS',
+    description: 'International Collegiate Programming Contest is ' +
+      'an annual multi-tiered computer programming competition among the universities of the world',
+    Icon: FaMedal,
+  },
+  {
+    title: 'National Gold Medalist ICPC 2020<br/>Asia Jakarta Regional',
+    issuedBy: 'BINUS',
+    description: 'International Collegiate Programming Contest is ' +
+      'an annual multi-tiered computer programming competition among the universities of the world',
+    Icon: FaMedal,
+  },
+  {
+    title: 'Gold Medalist GEMASTIK XIII<br/>Programming Category',
+    issuedBy: 'Kemendikbud',
+    description: 'GEMASTIK is an annual national IT competition ' +
+      'event. It has multiple competitions, one of them is the programming category',
+    Icon: FaMedal,
+  },
+  {
+    title: '1st Winner IYCL Vol. 1',
+    issuedBy: 'Kemendikbud',
+    description: 'IYCL (Indonesian Young Coder League) is a competition for young engineers to show off and\n' +
+      'prove their coding skills with others from around Indonesia',
+    Icon: FaTrophy,
+  },
+  {
+    title: 'Top 10 in IEEEXtreme 15.0',
+    issuedBy: 'IEEE',
+    description: 'IEEEXtreme is a global challenge in which teams of student members compete in a 24-hour ' +
+      'time span against each other to solve a set of programming problems.',
+    Icon: FaGlobe,
+  },
+  {
+    title: 'Top 15 in Shopee Code League 2021',
+    issuedBy: 'Shopee',
+    description: 'Shopee Code League is a 3-week coding challenge consisting of 3 coding competitions (data analytics, data science, and algorithms)' +
+      'open to all students and professionals across the region.',
+    Icon: FaGlobe,
+  },
+  {
+    title: '2nd Winner in Code Run 2021',
+    issuedBy: 'Algobash',
+    description: 'Code Run is the biggest open programming competition in Indonesia. Open to all Indonesian code activists without age, ' +
+      'profession and education restrictions.',
+    Icon: FaMedal,
   },
 ];
 

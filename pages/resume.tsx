@@ -1,12 +1,15 @@
-import { educations, experiences, languages } from '../data';
+import { achievements, educations, experiences, languages } from '../data';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation } from '../animations';
 import { FaBookReader, FaReact } from 'react-icons/fa';
 import { MdWork } from 'react-icons/md';
+import { BsAwardFill } from 'react-icons/bs';
+import { SiReactos } from 'react-icons/si';
 
 import Bar from '../components/Bar';
 import Head from 'next/head';
 import ExperienceCard from '../components/ExperienceCard';
+import AchievementCard from '../components/AchievementCard';
 
 const resume = () => {
   return (
@@ -33,21 +36,20 @@ const resume = () => {
               <FaBookReader className='mr-3' size={30} />
               <span className='font-montserrat'>Education</span>
             </div>
-            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-56'>
+            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
               {educations.map(education => (
                 <ExperienceCard education={education} />
               ))}
             </div>
           </motion.div>
-          {/*  Languages & Tools */}
           <div className='rounded-2xl border-cnc-yellow bg-cnc-yellow dark:bg-dark-500 border-2
             pb-3 pt-1 text-orange-800 dark:text-cnc-yellow py-3 px-4 my-4'
           >
             <div className='my-5 text-medium lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
-              <FaReact className='mr-2' size={25} />
+              <SiReactos className='mr-2' size={25} />
               <span>Languages & Framework</span>
             </div>
-            <div className='my-1 overflow-y-auto pr-3 h-40'>
+            <div className='my-1 overflow-y-auto pr-3 h-60 lg:h-40'>
               {
                 languages.map(language => (
                   <Bar data={language} />
@@ -65,12 +67,27 @@ const resume = () => {
               <MdWork className='mr-2' size={27} />
               <span className='font-montserrat'>Experience</span>
             </div>
-            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-56'>
+            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
               {experiences.map(education => (
                 <ExperienceCard education={education} />
               ))}
             </div>
           </motion.div>
+          <div className='rounded-2xl border-cnc-yellow bg-cnc-yellow dark:bg-dark-500 border-2
+            pb-3 pt-1 text-orange-800 dark:text-cnc-yellow py-3 px-4 my-4'
+          >
+            <div className='my-5 text-xl lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
+              <BsAwardFill className='mr-2' size={25} />
+              <span>Achievements</span>
+            </div>
+            <div className='my-1 overflow-y-auto pr-3 h-96 lg:h-48'>
+              {
+                achievements.map(achievement => (
+                  <AchievementCard achievement={achievement} />
+                ))
+              }
+            </div>
+          </div>
         </div>
       </div>
 
