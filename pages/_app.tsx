@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 
+
 import { ThemeProvider } from 'next-themes';
 import { AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
