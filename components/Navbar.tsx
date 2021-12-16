@@ -10,9 +10,10 @@ const NavItem: FunctionComponent<{
 }> = ({ activeItem, setActiveItem, name, route }) => {
   return (
     activeItem !== name ? (
-      <Link href={route}>
+      <Link href={route} scroll={false}>
         <a>
-          <span onClick={() => setActiveItem(name)} className='font-montserrat font-semibold hover:text-cnc-yellow'>{name}</span>
+          <span onClick={() => setActiveItem(name)}
+                className='font-montserrat font-semibold hover:text-cnc-yellow'>{name}</span>
         </a>
       </Link>
     ) : null
@@ -35,7 +36,8 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between px-5 py-3 my-3'>
-      <span className='font-bold text-cnc-yellow font-montserrat text-xl lg:text-2xl border-b-4 border-cnc-yellow md:text-2xl'>
+      <span
+        className='font-bold text-cnc-yellow font-montserrat text-xl lg:text-2xl border-b-4 border-cnc-yellow md:text-2xl'>
         {activeItem}
       </span>
       <div className='text-lg flex space-x-5'>
