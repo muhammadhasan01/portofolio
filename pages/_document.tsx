@@ -9,7 +9,7 @@ class MyDocument extends Document {
           <meta name='keywords' content='NextJS, Personal Website, Portofolio, React' />
         </Head>
         <body
-          className='bg-fixed bg-gradient-to-r from-red-900 to-rose-900 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
+          className='bg-fixed bg-red-900 dark:bg-gradient-to-r dark:from-dark-500 dark:to-dark-700 dark:text-white'>
         <Main />
         <NextScript />
         </body>
