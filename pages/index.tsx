@@ -18,7 +18,7 @@ const index = () => {
           Hasan's Personal Website | About
         </title>
       </Head>
-      <div className='mb-3 font-medium lg:text-lg'>
+      <div className='mb-3 font-medium lg:text-lg' id='about'>
         Hello! My name is Hasan, I am very passionate in learning programming and software
         engineering <br />
 
@@ -29,10 +29,11 @@ const index = () => {
         ending journey and
         I hope to become better every day, bit by bit <br />
       </div>
-      <div className='p-4 mt-5 bg-yellow-500 dark:bg-dark-500 flex-grow border-t-4 border-cnc-yellow'
+      <div className='p-4 mt-5 bg-cnc-yellow dark:bg-dark-500 flex-grow border-t-4 border-cnc-yellow'
            style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}
       >
-        <h6 className='my-5 text-2xl lg:text-3xl font-black text-orange-800 dark:text-cnc-yellow font-montserrat text-center tracking-wide'>
+        <h6
+          className='my-5 text-2xl lg:text-3xl font-black text-orange-800 dark:text-cnc-yellow font-montserrat text-center tracking-wide'>
           My Activities
         </h6>
         <div className='grid lg:grid-cols-2 gap-6'>

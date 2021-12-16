@@ -26,14 +26,14 @@ const resume = () => {
       <div className='grid gap-6 md:grid-cols-2'>
         <div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'
-                      className='bg-cnc-yellow dark:bg-dark-500 p-5 border-2 border-cnc-yellow
+                      className='bg-cnc-yellow dark:bg-dark-500 py-3 px-4 border-2 border-cnc-yellow
                       rounded-2xl text-orange-800 dark:text-cnc-yellow'
           >
             <div className='py-2 text-2xl font-bold flex justify-left items-center'>
               <FaBookReader className='mr-3' size={30} />
               <span className='font-montserrat'>Education</span>
             </div>
-            <div className='overflow-y-auto mt-2 border-orange-800' style={{ height: '20vh' }}>
+            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-56'>
               {educations.map(education => (
                 <ExperienceCard education={education} />
               ))}
@@ -41,13 +41,13 @@ const resume = () => {
           </motion.div>
           {/*  Languages & Tools */}
           <div className='rounded-2xl border-cnc-yellow bg-cnc-yellow dark:bg-dark-500 border-2
-            pb-3 pt-1 text-orange-800 dark:text-cnc-yellow px-5 my-4'
+            pb-3 pt-1 text-orange-800 dark:text-cnc-yellow py-3 px-4 my-4'
           >
             <div className='my-5 text-medium lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
               <FaReact className='mr-2' size={25} />
               <span>Languages & Framework</span>
             </div>
-            <div className='my-2 overflow-y-auto pr-3' style={{ height: '25vh' }}>
+            <div className='my-1 overflow-y-auto pr-3 h-40'>
               {
                 languages.map(language => (
                   <Bar data={language} />
@@ -58,14 +58,14 @@ const resume = () => {
         </div>
         <div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'
-                      className='bg-cnc-yellow dark:bg-dark-500 p-5 border-2 border-cnc-yellow
+                      className='bg-cnc-yellow dark:bg-dark-500 py-3 px-4 border-2 border-cnc-yellow
                       rounded-2xl text-orange-800 dark:text-cnc-yellow -mt-5 mb-3 lg:my-1'
           >
             <div className='py-2 text-2xl font-bold flex justify-left items-center'>
-              <MdWork className='mr-2' size={25} />
+              <MdWork className='mr-2' size={27} />
               <span className='font-montserrat'>Experience</span>
             </div>
-            <div className='overflow-y-auto mt-2 border-orange-800' style={{ height: '20vh' }}>
+            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-56'>
               {experiences.map(education => (
                 <ExperienceCard education={education} />
               ))}
