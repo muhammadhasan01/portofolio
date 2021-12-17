@@ -8,7 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 function MyApp({ Component, pageProps, router }) {
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
   // When mounted on client, now we can show the UI
   useEffect(() => {
     setMounted(true);
