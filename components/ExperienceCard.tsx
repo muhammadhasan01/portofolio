@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { IExperience } from '../type';
+import { IExperience } from '../utils/type';
 
 const ExperienceCard: FunctionComponent<{ education: IExperience }> =
   ({

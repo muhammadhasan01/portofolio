@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { projectData } from '../data';
+import { projectData } from '../utils/data';
 import ProjectCard from '../components/ProjectCard';
 import ProjectsNavbar from '../components/ProjectsNavbar';
-import { Category, IProject } from '../type';
+import { Category, IProject } from '../utils/type';
 import { motion } from 'framer-motion';
-import { fadeInUp, routeAnimation, stagger } from '../animations';
+import { fadeInUp, routeAnimation, stagger } from '../utils/animations';
 import Head from 'next/head';
 
 const projects = () => {

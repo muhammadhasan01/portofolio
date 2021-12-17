@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { IAchievement } from '../type';
+import { IAchievement } from '../utils/type';
 
 const AchievementCard: FunctionComponent<{ achievement: IAchievement }> = (
   {
@@ -14,8 +14,8 @@ const AchievementCard: FunctionComponent<{ achievement: IAchievement }> = (
   return (
     <div>
       <div className='my-1 grid grid-cols-12 flex flex-col items-center justify-left'>
-        <Icon className='col-span-2 -mr-5 lg:-mr-3' size={25}/>
-        <span dangerouslySetInnerHTML={createMarkup()} className='font-bold text-medium -ml-3 lg:-ml-7 col-span-10' />
+        <Icon className='col-span-2' size={25}/>
+        <span dangerouslySetInnerHTML={createMarkup()} className='font-bold text-medium -ml-2 lg:-ml-7 col-span-10' />
       </div>
       <div className='md:text-lg flex justify-left items-center'>
         <span className='font-semibold text-base md:text-medium'>Issued By {issuedBy}</span>

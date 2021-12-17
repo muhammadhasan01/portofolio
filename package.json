@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.0",
     "framer-motion": "^3.10.3",
     "next": "latest",
     "next-themes": "0.0.15",
