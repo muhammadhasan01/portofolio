@@ -1,29 +1,16 @@
 import React, { useState } from 'react';
 import { projectData } from '../utils/data';
 import ProjectCard from '../components/ProjectCard';
-import ProjectsNavbar from '../components/ProjectsNavbar';
-import { Category, IProject } from '../utils/type';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../utils/animations';
 import Head from 'next/head';
 
 const projects = () => {
-  const [projectState, setProjectState] = useState<IProject[]>(projectData);
-  const [active, setActive] = useState<Category | 'all'>('all');
-  const handlerFilterCategory = (category: Category | 'all') => {
-    setActive(category);
-    if (category === 'all') {
-      setProjectState(projectData);
-      return;
-    }
-    const filteredProject = projectData.filter(p => p.category.includes(category));
-    setProjectState(filteredProject);
-  };
   const [showDetail, setShowDetail] = useState<number | null>(null);
   return (
     <motion.div
       className='px-5 py-2 overflow-y-auto'
-      style={{ height: '65vh' }}
+      style={{ height: '75vh' }}
       variants={routeAnimation}
       initial='initial'
       animate='animate'
@@ -34,17 +21,17 @@ const projects = () => {
           Hasan's Personal Website | Projects
         </title>
       </Head>
-      <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
       <motion.div
-        className='grid grid-cols-12 gap-4 my-3 relative'
+        className='grid grid-cols-12 gap-4 my-3'
         variants={stagger}
         initial='initial'
         animate='animate'
       >
         {
-          projectState.map(project => (
+          projectData.map(project => (
             <motion.div
-              className='col-span-12 sm:col-span-6 lg:col-span-4 p-2 bg-cnc-yellow dark:bg-dark-300 rounded-lg'
+              className='col-span-12 sm:col-span-6 border-2 border-cnc-yellow
+              lg:col-span-4 p-2 bg-cnc-yellow dark:bg-dark rounded-2xl'
               variants={fadeInUp}
             >
               <ProjectCard project={project} key={project.name} showDetail={showDetail} setShowDetail={setShowDetail} />

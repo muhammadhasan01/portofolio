@@ -26,7 +26,7 @@ export const services: IService[] = [
   },
   {
     title: 'Exploring Tech & Development Stuff',
-    about: 'I like to explore all sort of tech and development stuff, anything that grasp my interest, I\'ll try to explore it',
+    about: 'I love to explore all sort of tech and development stuff, anything that grasp my interest, I\'ll try to explore it',
     Icon: MdExplore,
   },
 ];
@@ -34,17 +34,17 @@ export const services: IService[] = [
 export const navItems: INavItem[] = [
   {
     name: 'about',
-    route: '/'
+    route: '/',
   },
   {
     name: 'resume',
-    route: '/resume'
+    route: '/resume',
   },
   {
     name: 'projects',
-    route: '/projects'
-  }
-]
+    route: '/projects',
+  },
+];
 
 export const languages: ISkill[] = [
   {
@@ -124,7 +124,7 @@ export const educations: IExperience[] = [
     CompanyIcon: BsStarFill,
     companyIconSize: 23,
     duration: '(2015 - 2018)',
-    description: 'Got the Highest National Senior High School Exam on Batch 2015. ' +
+    description: 'Alhamdulillah, I Got the Highest National Senior High School Exam on Batch 2015. ' +
       'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
   },
   {
@@ -133,7 +133,7 @@ export const educations: IExperience[] = [
     CompanyIcon: BsStar,
     companyIconSize: 23,
     duration: '(2012 - 2015)',
-    description: 'Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
+    description: 'Alhamdulillah, I Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
   },
 ];
 
@@ -143,7 +143,7 @@ export const experiences: IExperience[] = [
     role: 'Backend Engineer Intern',
     CompanyIcon: ImAirplane,
     companyIconSize: 20,
-    duration: '(Aug. 2018 - Present)',
+    duration: '(Aug. 2021 - Present)',
     description: 'Working on Software API Testing using Karate Framework, Mountebank, and AWS',
   },
   {
@@ -168,15 +168,15 @@ export const experiences: IExperience[] = [
 
 export const achievements: IAchievement[] = [
   {
-    title: 'National Gold Medalist ICPC 2020<br/>Asia Jakarta Regional',
-    issuedBy: 'BINUS',
+    title: 'National Gold Medalist ACM ICPC 2020<br/>Asia Jakarta Regional',
+    issuedBy: 'Associating Computing Machinery',
     description: 'International Collegiate Programming Contest is ' +
       'an annual multi-tiered computer programming competition among the universities of the world',
     Icon: FaMedal,
   },
   {
-    title: 'National Gold Medalist ICPC 2020<br/>Asia Jakarta Regional',
-    issuedBy: 'BINUS',
+    title: 'National Gold Medalist ACM ICPC 2020<br/>Asia Jakarta Regional',
+    issuedBy: 'Associating Computing Machinery',
     description: 'International Collegiate Programming Contest is ' +
       'an annual multi-tiered computer programming competition among the universities of the world',
     Icon: FaMedal,
@@ -190,7 +190,7 @@ export const achievements: IAchievement[] = [
   },
   {
     title: '1st Winner IYCL Vol. 1',
-    issuedBy: 'Kemendikbud',
+    issuedBy: 'Mekari x Money Forward',
     description: 'IYCL (Indonesian Young Coder League) is a competition for young engineers to show off and\n' +
       'prove their coding skills with others from around Indonesia',
     Icon: FaTrophy,
@@ -205,7 +205,7 @@ export const achievements: IAchievement[] = [
   {
     title: 'Top 15 in Shopee Code League 2021',
     issuedBy: 'Shopee',
-    description: 'Shopee Code League is a 3-week coding challenge consisting of 3 coding competitions (data analytics, data science, and algorithms)' +
+    description: 'Shopee Code League is a 3-week coding challenge consisting of 3 coding competitions (data analytics, data science, and algorithms) ' +
       'open to all students and professionals across the region.',
     Icon: FaGlobe,
   },
@@ -229,71 +229,97 @@ export const projectData: IProject[] = [
   {
     id: 1,
     name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
+    description: 'Compete HMIF Tech is a website to give Competition and Community info to the world, ' +
+      'this website includes starting guide to compete in competitions including ' +
+      'Competitive Programming, Capture The Flag, Data Science, UI/UX Competition, and Game Development',
     imagePath: '/images/projects/compete-hmif-tech-web.png',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    keyTechs: ['React', 'NextJs', 'GatsbyJs', 'TailwindCSS', 'Markdown', 'LaTeX'],
   },
   {
     id: 2,
-    name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    name: 'Fitness Android Application',
+    description: 'Fitness Android Application is an android application that can support exercise activities that contain ' +
+      'several features such as Sport News, Training Tracker, Training History, and Training Scheduler.',
+    imagePath: '/images/projects/fitness-android.png',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/fitness-android-application',
+    keyTechs: ['Android', 'Kotlin'],
   },
   {
     id: 3,
-    name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    name: 'Tanks Game Extended',
+    description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial!, ' +
+      'so that in our game there are several additional features, such as LAN multiplayer, room system, bots, new weapons, ' +
+      'money rush mode, and others.',
+    imagePath: '/images/projects/tanks-extended.png',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/tanks-extended',
+    keyTechs: ['Unity', 'C#'],
   },
   {
     id: 4,
-    name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    name: 'Academic Information System',
+    description: 'This Academic Information System application was developed to meet the needs of academic administration activities on the STEI campus (School of Electrical and Informatics Engineering). ' +
+      'This Academic Information System is managed by the admin and can be used by students and lecturers.',
+    imagePath: '/images/projects/SIAK.png',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/aplikasi-sistem-informasi-akademik',
+    keyTechs: ['MySQL', 'Python', 'PyQt', 'GUI'],
   },
   {
     id: 5,
-    name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    name: 'Money Monitoring Application',
+    description: 'Money Monitoring Application is an application to monitor the finances of units and subunits at ' +
+      'the School of Electrical and Informatics Engineering ITB. ' +
+      'This app is built with ReactJS, React-Bootstrap, and several additional libraries.',
+    imagePath: '/images/projects/stei-anggaran.png',
+    deployedUrl: 'https://stei-monitoring-anggaran-15.herokuapp.com/',
+    githubUrl: 'https://github.com/muhammadhasan01/aplikasi-monitor-keuangan-frontend',
+    keyTechs: ['MongoDB', 'ExpressJs', 'ReactJs', 'NodeJs', 'Bootstrap', 'JWT'],
   },
   {
     id: 6,
-    name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    name: 'Avatar Duel Game Card',
+    description: 'Avatar Duel Game Card is a card game application created with JavaFX. ' +
+      'This game can be played by two people, each person has a card containing 3 types, ' +
+      'namely land, character, and skill cards. Each of these dueling avatar cards has its own function, ' +
+      'and of course, the contents of these cards are based on Avatar: The Last Airbender. ' +
+      'The main objective of this game is to defeat the opposing player by reducing the opponent\'s health point to 0 or less.',
+    imagePath: '/images/projects/avatar-duel.png',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/AvatarDuelGameCard',
+    keyTechs: ['Java', 'JavaFX', 'OOP', 'GUI'],
   },
   {
     id: 7,
-    name: 'Compete HMIF Tech',
-    description: 'This is a website to give competition materials',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
-    category: ['react'],
-    keyTechs: ['React', 'NextJS', 'GatsbyJS', 'TailwindCSS'],
+    name: 'Calculator Application',
+    description: 'Calculator application is an application created using the Java programming language with GUI Swing. ' +
+      'This Calculator application, as the name implies, is a calculator that can perform operations on mathematical expressions such as addition, subtraction, multiplication, and division.',
+    imagePath: '/images/projects/calculator.png',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/Kalkulator_Java_Swing',
+    keyTechs: ['Java', 'GUI', 'Java Swing'],
+  },
+  {
+    id: 8,
+    name: 'Halma AI',
+    description: 'Halma is a strategy board game. The core of the project is implementing AI in the bot (computer player), ' +
+      'using Minimax Algorithm, Local Search Algorithms (Hill Climbing or Simulated Annealing), ' +
+      'and both, and finding out how good each algorithm performs.',
+    imagePath: '/images/projects/halma-ai.png',
+    deployedUrl: 'https://halma-euy.netlify.app/',
+    githubUrl: 'https://github.com/muhammadhasan01/halma-AI',
+    keyTechs: ['AI', 'HTML', 'CSS', 'Javascript'],
+  },
+  {
+    id: 9,
+    name: 'Golang RESTful API Forum',
+    description: 'Golang RESTful API project provides the backend for a discussion forum with Users, Threads and Posts',
+    imagePath: '/images/projects/golang.png',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/go-rest-api-forum',
+    keyTechs: ['Golang', 'RESTful API', 'PostgreSQL'],
   },
 ];
