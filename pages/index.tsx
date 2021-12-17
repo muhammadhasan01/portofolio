@@ -1,7 +1,7 @@
-import { services } from '../data';
+import { services } from '../utils/data';
 import ServiceCard from '../components/ServiceCard';
 import { motion } from 'framer-motion';
-import { fadeInUp, routeAnimation } from '../animations';
+import { fadeInUp, routeAnimation } from '../utils/animations';
 
 import Head from 'next/head';
 
@@ -18,7 +18,7 @@ const index = () => {
           Hasan's Personal Website | About
         </title>
       </Head>
-      <div className='mb-3 font-medium lg:text-lg' id='about'>
+      <div className='mb-3 font-medium lg:text-medium' id='about'>
         Hello! My name is Hasan, I am very passionate in learning programming and software
         engineering <br />
 

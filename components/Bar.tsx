@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
-import { ISkill } from '../type';
+import { ISkill } from '../utils/type';
 import { motion } from 'framer-motion';
-import { stagger } from '../animations';
+import { stagger } from '../utils/animations';
 
 const Bar: FunctionComponent<{
   data: ISkill

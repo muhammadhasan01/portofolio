@@ -4,7 +4,7 @@ import { ImDatabase, ImAirplane } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
 import { FaLaptopCode, FaMedal, FaTrophy, FaGlobe } from 'react-icons/fa';
 import { AiFillHome } from 'react-icons/ai';
-import { GiElephant, GiFruitBowl } from 'react-icons/gi';
+import { GiElephant, GiFruitBowl, GiElephantHead } from 'react-icons/gi';
 
 export const services: IService[] = [
   {
@@ -58,8 +58,18 @@ export const languages: ISkill[] = [
     Icon: BsCircleFill,
   },
   {
+    name: 'SQL',
+    level: '70%',
+    Icon: BsCircleFill,
+  },
+  {
     name: 'React',
     level: '73%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'NextJs',
+    level: '60%',
     Icon: BsCircleFill,
   },
   {
@@ -68,8 +78,18 @@ export const languages: ISkill[] = [
     Icon: BsCircleFill,
   },
   {
-    name: 'ExpressJS',
+    name: 'ExpressJs',
     level: '65%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Flask',
+    level: '45%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'MongoDB',
+    level: '50%',
     Icon: BsCircleFill,
   },
 ];
@@ -173,6 +193,13 @@ export const achievements: IAchievement[] = [
     description: 'Shopee Code League is a 3-week coding challenge consisting of 3 coding competitions (data analytics, data science, and algorithms)' +
       'open to all students and professionals across the region.',
     Icon: FaGlobe,
+  },
+  {
+    title: 'Ganesha Karsa Awardee 2021',
+    issuedBy: 'Institut Teknologi Bandung',
+    description: 'Ganesha Karsa is an award given by Institut Teknologi Bandung every year for ' +
+      'getting national or international achievement representing ITB in the field of scientific or social community.',
+    Icon: GiElephantHead,
   },
   {
     title: '2nd Winner in Code Run 2021',

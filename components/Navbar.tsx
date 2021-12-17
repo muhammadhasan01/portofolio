@@ -1,6 +1,8 @@
 import { FunctionComponent, useEffect, useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { TiThMenu } from 'react-icons/ti';
+
+import Link from 'next/link';
 
 const NavItem: FunctionComponent<{
   activeItem: string,
@@ -22,6 +24,7 @@ const NavItem: FunctionComponent<{
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>('');
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const { pathname } = useRouter();
 
@@ -41,6 +44,7 @@ const Navbar = () => {
         {activeItem}
       </span>
       <div className='text-lg flex space-x-5'>
+
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/' />
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Projects' route='/projects' />
         <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Resume' route='/resume' />

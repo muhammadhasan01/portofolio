@@ -1,11 +1,11 @@
 import { FunctionComponent, useState } from 'react';
-import { IProject } from '../type';
+import { IProject } from '../utils/type';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 import { motion } from 'framer-motion';
 
 import Image from 'next/image';
-import { fadeInUp, stagger } from '../animations';
+import { fadeInUp, stagger } from '../utils/animations';
 
 const ProjectCard: FunctionComponent<{
   project: IProject,
