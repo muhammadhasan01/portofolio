@@ -23,7 +23,9 @@ const Dropdown: FunctionComponent<{
     setDropdownPopoverShow(false);
   };
   const handleClickItem = (item: string) => {
-    setDropdownPopoverShow(false);
+    if (item !== activeItem) {
+      setDropdownPopoverShow(false);
+    }
     setActiveItem(item);
   };
   return (
@@ -54,14 +56,12 @@ const Dropdown: FunctionComponent<{
               style={{ minWidth: '10rem' }}
             >
               {navItems.map(({ name, route }) => {
-                if (activeItem === name) {
-                  return null;
-                }
                 return (
                   <Link href={route} scroll={false}>
                      <span onClick={() => handleClickItem(name)}
-                           className='text-medium py-2 px-4 font-medium dark:font-semibold cursor-pointer
-                        capitalize block w-full whitespace-nowrap bg-transparent'>
+                           className={'text-medium py-2 px-4 cursor-pointer ' +
+                           (name === activeItem ? ' font-bold ' : '') +
+                           ' capitalize block w-full whitespace-nowrap'}>
                        {name}
                      </span>
                   </Link>

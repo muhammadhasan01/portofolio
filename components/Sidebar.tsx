@@ -28,12 +28,12 @@ const Sidebar = () => {
           quality='100'
         />
       </div>
-      <h3 className='my-4 xl:text-3xl text-2xl font-bold text-cnc-yellow tracking-wider font-montserrat'>
+      <h3 className='my-4 text-xl xl:text-3xl md:text-2xl font-bold text-cnc-yellow tracking-wider font-montserrat'>
         Muhammad Hasan
       </h3>
       <div className='flex flex-col'>
         <p
-          className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800
+          className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800 cursor-pointer
           dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-500 rounded-full'>
           <FaGraduationCap className='mx-1' size={20} />
           <span>Final Year Student</span></p>
