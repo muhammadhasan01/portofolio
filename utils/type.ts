@@ -6,6 +6,11 @@ export interface IService {
   Icon: IconType
 }
 
+export interface INavItem {
+  name: string,
+  route: string
+}
+
 export interface ISkill {
   name: string,
   level: string,

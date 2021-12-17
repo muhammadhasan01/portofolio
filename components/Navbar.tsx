@@ -1,53 +1,33 @@
-import { FunctionComponent, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { TiThMenu } from 'react-icons/ti';
+import { navItems } from '../utils/data';
 
-import Link from 'next/link';
-
-const NavItem: FunctionComponent<{
-  activeItem: string,
-  setActiveItem: Function,
-  name: string,
-  route: string
-}> = ({ activeItem, setActiveItem, name, route }) => {
-  return (
-    activeItem !== name ? (
-      <Link href={route} scroll={false}>
-        <a>
-          <span onClick={() => setActiveItem(name)}
-                className='font-montserrat font-semibold hover:text-cnc-yellow'>{name}</span>
-        </a>
-      </Link>
-    ) : null
-  );
-};
+import Dropdown from './DropDown';
 
 const Navbar = () => {
-  const [activeItem, setActiveItem] = useState<string>('');
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [activeItem, setActiveItem] = useState<string>('about');
 
   const { pathname } = useRouter();
 
   useEffect(() => {
     if (pathname === '/') {
-      setActiveItem('About');
+      setActiveItem('about');
       return;
     }
-    const newValue = pathname.charAt(1).toUpperCase() + pathname.substring(2);
+    const newValue = pathname.substring(1);
     setActiveItem(newValue);
   }, []);
 
   return (
     <div className='flex justify-between px-5 py-3 my-3'>
       <span
-        className='font-bold text-cnc-yellow font-montserrat text-xl lg:text-2xl border-b-4 border-cnc-yellow md:text-2xl'>
+        className='font-bold capitalize text-cnc-yellow font-montserrat
+        text-xl lg:text-2xl border-b-4 border-cnc-yellow md:text-2xl'>
         {activeItem}
       </span>
       <div className='text-lg flex space-x-5'>
-
-        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='About' route='/' />
-        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Projects' route='/projects' />
-        <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name='Resume' route='/resume' />
+        <Dropdown activeItem={activeItem} setActiveItem={setActiveItem}
+                  navItems={navItems} />
       </div>
     </div>
   );

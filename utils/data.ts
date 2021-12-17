@@ -1,4 +1,4 @@
-import { IAchievement, IExperience, IProject, IService, ISkill } from './type';
+import { IAchievement, IExperience, INavItem, IProject, IService, ISkill } from './type';
 import { BsCircleFill, BsCreditCard2FrontFill, BsStar, BsStarFill } from 'react-icons/bs';
 import { ImDatabase, ImAirplane } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
@@ -30,6 +30,21 @@ export const services: IService[] = [
     Icon: MdExplore,
   },
 ];
+
+export const navItems: INavItem[] = [
+  {
+    name: 'about',
+    route: '/'
+  },
+  {
+    name: 'resume',
+    route: '/resume'
+  },
+  {
+    name: 'projects',
+    route: '/projects'
+  }
+]
 
 export const languages: ISkill[] = [
   {
