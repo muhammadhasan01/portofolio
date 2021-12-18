@@ -41,6 +41,8 @@ module.exports = {
   },
   variants: {
     extend: {
+      backgroundColor: ['dark'],
+      textColor: ['dark'],
       boxShadow: ['dark'],
     },
   },
