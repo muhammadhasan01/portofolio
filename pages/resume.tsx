@@ -14,7 +14,7 @@ import AchievementCard from '../components/AchievementCard';
 const resume = () => {
   return (
     <motion.div
-      className='lg:px-6 lg:py-2'
+      className='dark:bg-dark-500 lg:dark:bg-inherit lg:px-6 lg:py-2'
       variants={routeAnimation}
       initial='initial'
       animate='animate'
