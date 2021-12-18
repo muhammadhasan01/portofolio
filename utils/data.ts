@@ -232,7 +232,7 @@ export const projectData: IProject[] = [
     description: 'Compete HMIF Tech is a website to give Competition and Community info to the world, ' +
       'this website includes starting guide to compete in competitions including ' +
       'Competitive Programming, Capture The Flag, Data Science, UI/UX Competition, and Game Development',
-    imagePath: '/images/projects/compete-hmif-tech-web.png',
+    imagePath: '/images/projects/compete-hmif-tech-web.webp',
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     keyTechs: ['React', 'NextJs', 'GatsbyJs', 'TailwindCSS', 'Markdown', 'LaTeX'],
@@ -242,7 +242,7 @@ export const projectData: IProject[] = [
     name: 'Fitness Android Application',
     description: 'Fitness Android Application is an android application that can support exercise activities that contain ' +
       'several features such as Sport News, Training Tracker, Training History, and Training Scheduler.',
-    imagePath: '/images/projects/fitness-android.png',
+    imagePath: '/images/projects/fitness-android.webp',
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/fitness-android-application',
     keyTechs: ['Android', 'Kotlin'],
@@ -253,7 +253,7 @@ export const projectData: IProject[] = [
     description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial! ' +
       'so that in our game there are several additional features, such as LAN multiplayer, room system, bots, new weapons, ' +
       'money rush mode, and others.',
-    imagePath: '/images/projects/tanks-extended.png',
+    imagePath: '/images/projects/tanks-extended.webp',
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/tanks-extended',
     keyTechs: ['Unity', 'C#'],
@@ -263,7 +263,7 @@ export const projectData: IProject[] = [
     name: 'Academic Information System',
     description: 'This Academic Information System application was developed to meet the needs of academic administration activities on the STEI campus (School of Electrical and Informatics Engineering). ' +
       'This Academic Information System is managed by the admin and can be used by students and lecturers.',
-    imagePath: '/images/projects/SIAK.png',
+    imagePath: '/images/projects/SIAK.webp',
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/aplikasi-sistem-informasi-akademik',
     keyTechs: ['MySQL', 'Python', 'PyQt', 'GUI'],
@@ -274,7 +274,7 @@ export const projectData: IProject[] = [
     description: 'Money Monitoring Application is an application to monitor the finances of units and subunits at ' +
       'the School of Electrical and Informatics Engineering ITB. ' +
       'This app is built with ReactJS, React-Bootstrap, and several additional libraries.',
-    imagePath: '/images/projects/stei-anggaran.png',
+    imagePath: '/images/projects/stei-anggaran.webp',
     deployedUrl: 'https://stei-monitoring-anggaran-15.herokuapp.com/',
     githubUrl: 'https://github.com/muhammadhasan01/aplikasi-monitor-keuangan-frontend',
     keyTechs: ['MongoDB', 'ExpressJs', 'ReactJs', 'NodeJs', 'Bootstrap', 'JWT'],
@@ -287,7 +287,7 @@ export const projectData: IProject[] = [
       'namely land, character, and skill cards. Each of these dueling avatar cards has its own function, ' +
       'and of course, the contents of these cards are based on Avatar: The Last Airbender. ' +
       'The main objective of this game is to defeat the opposing player by reducing the opponent\'s health point to 0 or less.',
-    imagePath: '/images/projects/avatar-duel.png',
+    imagePath: '/images/projects/avatar-duel.webp',
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/AvatarDuelGameCard',
     keyTechs: ['Java', 'JavaFX', 'OOP', 'GUI'],
@@ -297,7 +297,7 @@ export const projectData: IProject[] = [
     name: 'Calculator Application',
     description: 'Calculator application is an application created using the Java programming language with GUI Swing. ' +
       'This Calculator application, as the name implies, is a calculator that can perform operations on mathematical expressions such as addition, subtraction, multiplication, and division.',
-    imagePath: '/images/projects/calculator.png',
+    imagePath: '/images/projects/calculator.webp',
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/Kalkulator_Java_Swing',
     keyTechs: ['Java', 'GUI', 'Java Swing'],
@@ -308,7 +308,7 @@ export const projectData: IProject[] = [
     description: 'Halma is a strategy board game. The core of the project is implementing AI in the bot (computer player), ' +
       'using Minimax Algorithm, Local Search Algorithms (Hill Climbing or Simulated Annealing), ' +
       'and both, and finding out how good each algorithm performs.',
-    imagePath: '/images/projects/halma-ai.png',
+    imagePath: '/images/projects/halma-ai.webp',
     deployedUrl: 'https://halma-euy.netlify.app/',
     githubUrl: 'https://github.com/muhammadhasan01/halma-AI',
     keyTechs: ['AI', 'HTML', 'CSS', 'Javascript'],
@@ -317,7 +317,7 @@ export const projectData: IProject[] = [
     id: 9,
     name: 'Golang RESTful API Forum',
     description: 'Golang RESTful API project provides the backend for a discussion forum with Users, Threads and Posts',
-    imagePath: '/images/projects/golang.png',
+    imagePath: '/images/projects/golang.webp',
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/go-rest-api-forum',
     keyTechs: ['Golang', 'RESTful API', 'PostgreSQL'],

@@ -15,7 +15,7 @@ const index = () => {
     >
       <Head>
         <title>
-          Hasan's Personal Website | About
+          About | Hasan's Personal Website
         </title>
       </Head>
       <div className='mb-3 font-medium lg:text-medium' id='about'>
@@ -32,14 +32,14 @@ const index = () => {
       <div className='p-4 mt-5 bg-cnc-yellow dark:bg-dark-500 flex-grow border-t-4 border-cnc-yellow'
            style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}
       >
-        <h6
+        <div
           className='my-5 text-2xl lg:text-3xl font-black text-orange-800 dark:text-cnc-yellow font-montserrat text-center tracking-wide'>
           My Activities
-        </h6>
+        </div>
         <div className='grid lg:grid-cols-2 gap-6'>
           {
             services.map(service => (
-              <motion.div variants={fadeInUp} initial='initial' animate='animate'
+              <motion.div variants={fadeInUp} initial='initial' animate='animate' key={service.title}
                           className='lg:col-span-1 bg-orange-800 dark:bg-dark-700 text-white
                           border-2 border-cnc-yellow rounded-lg'>
                 <ServiceCard service={service} key={service.title} />

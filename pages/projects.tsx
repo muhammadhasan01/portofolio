@@ -18,7 +18,7 @@ const projects = () => {
     >
       <Head>
         <title>
-          Hasan's Personal Website | Projects
+          Projects | Hasan's Personal Website
         </title>
       </Head>
       <motion.div
