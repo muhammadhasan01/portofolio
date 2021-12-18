@@ -1,7 +1,7 @@
 import { achievements, educations, experiences, languages } from '../utils/data';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation } from '../utils/animations';
-import { FaBookReader, FaReact } from 'react-icons/fa';
+import { FaBookReader } from 'react-icons/fa';
 import { MdWork } from 'react-icons/md';
 import { BsAwardFill } from 'react-icons/bs';
 import { SiReactos } from 'react-icons/si';
