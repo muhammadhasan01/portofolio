@@ -129,7 +129,7 @@ export const educations: IExperience[] = [
   },
   {
     company: 'Alfa Centauri JHS',
-    role: 'Science Student',
+    role: 'Student',
     CompanyIcon: BsStar,
     companyIconSize: 23,
     duration: '(2012 - 2015)',
