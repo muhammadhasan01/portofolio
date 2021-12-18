@@ -29,7 +29,8 @@ const resume = () => {
       <div className='grid lg:gap-6 lg:grid-cols-2'>
         <div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'
-                      className='bg-cnc-yellow dark:bg-dark-500 -mx-1 p-5 lg:mx-0 lg:py-3 lg:px-4 border-2 border-orange-800 dark:border-cnc-yellow
+                      className='bg-cnc-yellow dark:bg-dark-500 -mx-1 p-5 lg:mx-0 lg:py-3 dark:border-y-0 dark:lg:border-y-2
+                      lg:px-4 border-2 border-orange-800 dark:border-cnc-yellow
                       lg:rounded-2xl text-orange-800 dark:text-cnc-yellow'
           >
             <div className='py-2 text-2xl font-bold flex justify-left items-center'>
@@ -42,7 +43,8 @@ const resume = () => {
               ))}
             </div>
           </motion.div>
-          <div className='lg:rounded-2xl border-orange-800 dark:border-cnc-yellow bg-cnc-yellow dark:bg-dark-500 border-2 -mx-1 lg:mx-0
+          <div className='lg:rounded-2xl border-orange-800 dark:border-y-0 dark:lg:border-y-2
+            dark:border-cnc-yellow bg-cnc-yellow dark:bg-dark-500 border-2 -mx-1 lg:mx-0 mt-4
             pb-3 pt-1 text-orange-800 dark:text-cnc-yellow py-3 px-4 lg:my-4'
           >
             <div className='my-5 text-medium lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
@@ -60,7 +62,8 @@ const resume = () => {
         </div>
         <div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'
-                      className='bg-cnc-yellow dark:bg-dark-500 py-3 px-4 border-2 border-orange-800 dark:border-cnc-yellow -mx-1 lg:mx-0
+                      className='bg-cnc-yellow dark:bg-dark-500 py-3 px-4 border-2 dark:border-y-0 dark:lg:border-y-2
+                      mt-4 lg:mt-0 border-orange-800 dark:border-cnc-yellow -mx-1 lg:mx-0
                       lg:rounded-2xl text-orange-800 dark:text-cnc-yellow mb-3 lg:my-1'
           >
             <div className='py-2 text-2xl font-bold flex justify-left items-center'>
@@ -73,7 +76,8 @@ const resume = () => {
               ))}
             </div>
           </motion.div>
-          <div className='lg:rounded-2xl border-orange-800 dark:border-cnc-yellow bg-cnc-yellow dark:bg-dark-500 border-2 -mx-1 mb-6 lg:mx-0 -mt-3
+          <div className='lg:rounded-2xl border-orange-800 dark:border-cnc-yellow dark:border-y-0 dark:lg:border-y-2
+            bg-cnc-yellow dark:bg-dark-500 border-2 -mx-1 mb-6 lg:mx-0
             pb-3 pt-1 py-3 px-4 text-orange-800 dark:text-cnc-yellow lg:my-4'
           >
             <div className='my-5 text-xl lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
