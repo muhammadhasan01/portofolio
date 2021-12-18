@@ -250,7 +250,7 @@ export const projectData: IProject[] = [
   {
     id: 3,
     name: 'Tanks Game Extended',
-    description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial!, ' +
+    description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial! ' +
       'so that in our game there are several additional features, such as LAN multiplayer, room system, bots, new weapons, ' +
       'money rush mode, and others.',
     imagePath: '/images/projects/tanks-extended.png',
