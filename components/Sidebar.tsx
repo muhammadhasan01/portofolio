@@ -20,7 +20,7 @@ const Sidebar = () => {
       <div className='relative border-4 border-red-900 dark:border-cnc-yellow w-36 h-36 rounded-full mx-auto'
       >
         <Image
-          src='/images/mypicture.jpg'
+          src='/images/mhasan01.webp'
           alt='image profile'
           className='rounded-full'
           height='160'
@@ -50,16 +50,16 @@ const Sidebar = () => {
       </div>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-cnc-yellow w-9/12 md:w-full mx-auto'>
-        <a href='https://codeforces.com/profile/m.hasan01' target='_blank' aria-label='codeforces'>
+        <a href='https://codeforces.com/profile/m.hasan01' target='_blank' rel="noopener" aria-label='codeforces'>
           <SiCodeforces className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://github.com/muhammadhasan01' target='_blank' aria-label='github'>
+        <a href='https://github.com/muhammadhasan01' target='_blank' rel="noopener" aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' aria-label='linkedin'>
+        <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' rel="noopener" aria-label='linkedin'>
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.instagram.com/muhammadhasan01/' target='_blank' aria-label='linkedin'>
+        <a href='https://www.instagram.com/muhammadhasan01/' target='_blank' rel="noopener" aria-label='linkedin'>
           <AiFillInstagram className='w-8 h-8 cursor-pointer' />
         </a>
       </div>

@@ -37,6 +37,7 @@ const Dropdown: FunctionComponent<{
               className={'rounded shadow hover:shadow-lg ' +
               'outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 '}
               type='button'
+              aria-label='menu-button'
               ref={btnDropdownRef}
               onClick={() => {
                 dropdownPopoverShow
@@ -57,7 +58,7 @@ const Dropdown: FunctionComponent<{
             >
               {navItems.map(({ name, route }) => {
                 return (
-                  <Link href={route} scroll={false}>
+                  <Link href={route} scroll={false} key={name}>
                      <span onClick={() => handleClickItem(name)}
                            className={'text-medium py-2 px-4 cursor-pointer ' +
                            (name === activeItem ? ' font-bold ' : '') +
