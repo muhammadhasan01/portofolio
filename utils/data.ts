@@ -168,7 +168,7 @@ export const experiences: IExperience[] = [
 
 export const achievements: IAchievement[] = [
   {
-    title: 'National Gold Medalist ACM ICPC 2020<br/>Asia Jakarta Regional',
+    title: 'National Gold Medalist ACM ICPC 2021<br/>Asia Jakarta Regional',
     issuedBy: 'Associating Computing Machinery',
     description: 'International Collegiate Programming Contest is ' +
       'an annual multi-tiered computer programming competition among the universities of the world',
@@ -250,7 +250,7 @@ export const projectData: IProject[] = [
   {
     id: 3,
     name: 'Tanks Game Extended',
-    description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial!, ' +
+    description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial! ' +
       'so that in our game there are several additional features, such as LAN multiplayer, room system, bots, new weapons, ' +
       'money rush mode, and others.',
     imagePath: '/images/projects/tanks-extended.png',
