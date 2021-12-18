@@ -18,7 +18,7 @@ const ExperienceCard: FunctionComponent<{ education: IExperience }> =
         <div className='md:text-lg flex justify-left items-center'>
           <span className='font-semibold text-base md:text-medium'>{role}</span>
         </div>
-        <p className='my-2 font-medium text-base text-gray-800 dark:text-white lg:text-medium'>
+        <p className='my-2 font-medium text-base text-gray-800 dark:text-white xl:text-medium'>
           {description}
         </p>
       </div>

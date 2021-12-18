@@ -168,7 +168,7 @@ export const experiences: IExperience[] = [
 
 export const achievements: IAchievement[] = [
   {
-    title: 'National Gold Medalist ACM ICPC 2020<br/>Asia Jakarta Regional',
+    title: 'National Gold Medalist ACM ICPC 2021<br/>Asia Jakarta Regional',
     issuedBy: 'Associating Computing Machinery',
     description: 'International Collegiate Programming Contest is ' +
       'an annual multi-tiered computer programming competition among the universities of the world',
