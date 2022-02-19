@@ -81,9 +81,9 @@ const ProjectCard: FunctionComponent<{
             <motion.h3 variants={fadeInUp}
                        className='mb-3 text-white font-medium overflow-auto pr-3 h-36 lg:h-56'>{description}</motion.h3>
             <motion.div variants={fadeInUp} className='lg:flex overflow-auto items-center items-center hidden
-            mt-3 space-x-2 text-sm font-semibold'>
+            mt-3 space-x-2 text-sm font-semibold text-center'>
               {keyTechs.map(tech => (
-                <span key={tech} className='px-3 py-2 my-2 bg-gray-200 dark:bg-dark-800 rounded-lg'>
+                <span key={tech} className='px-2 py-2 my-2 bg-gray-200 dark:bg-dark-800 rounded-lg'>
                 {tech}
               </span>
               ))}
