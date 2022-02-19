@@ -36,7 +36,7 @@ const Sidebar = () => {
           className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800 cursor-pointer
           dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-500 rounded-full'>
           <FaGraduationCap className='mx-1' size={20} />
-          <span>Final Year Student</span></p>
+          <span className='font-montserrat'>Final Year Student</span></p>
         {/* Resume */}
         <a className='flex items-center justify-center px-2 py-2 my-2
         bg-cnc-yellow rounded-full text-orange-800 font-semibold
@@ -45,7 +45,7 @@ const Sidebar = () => {
            target='_blank'
         >
           <TiDocumentText className='mx-1' size={25} />
-          <span>View CV</span>
+          <span className='font-montserrat'>View CV</span>
         </a>
       </div>
       {/*Social Icons*/}
@@ -67,7 +67,7 @@ const Sidebar = () => {
       {/*  Address */}
       <div
         className='my-5 py-4 bg-cnc-yellow flex items-center justify-center flex-col space-y-2 font-semibold text-orange-800
-        dark:text-cnc-yellow dark:bg-dark border-y-2 border-orange-800 dark:border-cnc-yellow'
+        dark:text-cnc-yellow dark:bg-dark border-y-2 border-orange-800 dark:border-cnc-yellow font-montserrat'
         style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation size={18} />
@@ -86,7 +86,7 @@ const Sidebar = () => {
           onClick={() => window.open('mailto:muhammadhasan50@gmail.com')}
         >
           <GrMail className='mx-2' size={22} />
-          <span>Email Me</span>
+          <span className='font-montserrat'>Email Me</span>
         </button>
         <button
           className='bg-cnc-yellow text-orange-800 font-semibold w-full rounded-full border-2 border-red-800 dark:border-cnc-yellow
@@ -96,7 +96,7 @@ const Sidebar = () => {
           {theme === 'light' ?
             <BsSunFill size={20} /> : <BsFillMoonFill size={20} />
           }
-          <span className='mx-2'>Toggle Theme</span>
+          <span className='mx-2 font-montserrat'>Toggle Theme</span>
         </button>
       </div>
     </div>

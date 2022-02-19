@@ -4,7 +4,7 @@ import { ImDatabase, ImAirplane } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
 import { FaLaptopCode, FaMedal, FaTrophy, FaGlobe } from 'react-icons/fa';
 import { AiFillHome } from 'react-icons/ai';
-import { GiElephant, GiFruitBowl, GiElephantHead } from 'react-icons/gi';
+import { GiElephant, GiFruitBowl, GiElephantHead, GiSevenPointedStar } from 'react-icons/gi';
 
 export const services: IService[] = [
   {
@@ -139,11 +139,19 @@ export const educations: IExperience[] = [
 
 export const experiences: IExperience[] = [
   {
+    company: 'Mekari',
+    role: 'Software Engineer Intern',
+    CompanyIcon: GiSevenPointedStar,
+    companyIconSize: 23,
+    duration: '(Feb. 2022 - Present)',
+    description: 'Working in Mekari Secure ID Engineering Team using Ruby on Rails, Docker, and Kong API Gateway'
+  },
+  {
     company: 'Traveloka',
     role: 'Backend Engineer Intern',
     CompanyIcon: ImAirplane,
     companyIconSize: 20,
-    duration: '(Aug. 2021 - Present)',
+    duration: '(Aug. 2021 - Jan. 2022)',
     description: 'Working on Software API Testing using Karate Framework, Mountebank, and AWS',
   },
   {
@@ -321,5 +329,35 @@ export const projectData: IProject[] = [
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/go-rest-api-forum',
     keyTechs: ['Golang', 'RESTful API', 'PostgreSQL'],
+  },
+  {
+    id: 10,
+    name: 'Personal Website',
+    description: 'This is my personal website where I my put my information including activities, ' +
+      'resume, and projects. Created with NextJs, Typescript, React, Framer Motion, and Tailwind CSS. ' +
+      '(This is what you are seeing right now :D)',
+    imagePath: '/images/projects/personal-website.webp',
+    deployedUrl: 'http://mhasan01.com/',
+    githubUrl: 'https://github.com/muhammadhasan01/portofolio',
+    keyTechs: ['NextJs', 'React', 'Framer Motion', 'Tailwind CSS']
+  },
+  {
+    id: 11,
+    name: 'Competitive Programming Repo',
+    description: 'Collection of my competitive programming codes including libraries and competition solutions',
+    imagePath: '/images/projects/cp.webp',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/cp',
+    keyTechs: ['C++', 'Algorithms', 'Data Structure']
+  },
+  {
+    id: 12,
+    name: 'Willy Wangky Web',
+    description: 'Willi Wangky Choco Factory is a web-based online chocolate trading application.' +
+      ' This application is made using PHP on the backend and HTML, CSS, and Javascript on the frontend.',
+    imagePath: '/images/projects/willy-wangky.webp',
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/willy-wangky-web',
+    keyTechs: ['HTML', 'CSS', 'Javascript', 'PHP']
   },
 ];
