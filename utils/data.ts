@@ -143,8 +143,8 @@ export const experiences: IExperience[] = [
     role: 'Software Engineer Intern',
     CompanyIcon: GiSevenPointedStar,
     companyIconSize: 23,
-    duration: '(Feb. 2022 - Apr. 2022)',
-    description: 'Working as a Full Stack Engineer in Account and Launchpad Team using Ruby on Rails, Docker, and Kong API Gateway'
+    duration: '(Feb. 2022 - May. 2022)',
+    description: 'Working as a Full Stack Engineer in Account and Launchpad Team using Ruby on Rails, VueJs, Docker, and Kong API Gateway'
   },
   {
     company: 'Traveloka',
