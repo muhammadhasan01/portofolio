@@ -70,9 +70,9 @@ const resume = () => {
               <MdWork className='mr-2' size={27} />
               <span className='font-montserrat'>Experience</span>
             </div>
-            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
-              {experiences.map(education => (
-                <ExperienceCard education={education} />
+            <div className='overflow-y-auto mt-2 border-orange-800 h-80 lg:h-48'>
+              {experiences.map(experience => (
+                <ExperienceCard education={experience} />
               ))}
             </div>
           </motion.div>

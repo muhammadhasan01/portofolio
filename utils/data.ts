@@ -2,7 +2,7 @@ import { IAchievement, IExperience, INavItem, IProject, IService, ISkill } from 
 import { BsCircleFill, BsCreditCard2FrontFill, BsStar, BsStarFill } from 'react-icons/bs';
 import { ImDatabase, ImAirplane } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
-import { FaLaptopCode, FaMedal, FaTrophy, FaGlobe } from 'react-icons/fa';
+import { FaLaptopCode, FaMedal, FaTrophy, FaGlobe, FaArtstation } from 'react-icons/fa';
 import { AiFillHome } from 'react-icons/ai';
 import { GiElephant, GiFruitBowl, GiElephantHead, GiSevenPointedStar } from 'react-icons/gi';
 
@@ -124,7 +124,7 @@ export const educations: IExperience[] = [
     CompanyIcon: BsStarFill,
     companyIconSize: 23,
     duration: '(2015 - 2018)',
-    description: 'Alhamdulillah, I Got the Highest National Senior High School Exam on Batch 2015. ' +
+    description: 'Alhamdulillah, I became The Most Outstanding Student for the school year 2017/2018. ' +
       'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
   },
   {
@@ -138,6 +138,14 @@ export const educations: IExperience[] = [
 ];
 
 export const experiences: IExperience[] = [
+  {
+    company: 'AdaKerja',
+    role: 'Software Engineer Part Time',
+    CompanyIcon: FaArtstation,
+    companyIconSize: 23,
+    duration: '(May. 2022 - Now)',
+    description: 'Working as a Full Stack Engineer to develop various AdaKerja applications using React, ExpressJs, and AWS'
+  },
   {
     company: 'Mekari',
     role: 'Software Engineer Intern',
