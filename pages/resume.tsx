@@ -71,8 +71,8 @@ const resume = () => {
               <span className='font-montserrat'>Experience</span>
             </div>
             <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
-              {experiences.map(education => (
-                <ExperienceCard education={education} />
+              {experiences.map(experience => (
+                <ExperienceCard education={experience} />
               ))}
             </div>
           </motion.div>
