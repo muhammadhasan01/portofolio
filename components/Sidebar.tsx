@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillPhone } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillPhone, AiFillFacebook } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
 import { FaGraduationCap } from 'react-icons/fa';
@@ -50,8 +50,11 @@ const Sidebar = () => {
       </div>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-cnc-yellow w-9/12 md:w-full mx-auto'>
-        <a href='https://codeforces.com/profile/m.hasan01' target='_blank' rel="noopener" aria-label='codeforces'>
+        <a href='https://codeforces.com/profile/muhammadhasan01' target='_blank' rel="noopener" aria-label='codeforces'>
           <SiCodeforces className='w-8 h-8 cursor-pointer' />
+        </a>
+        <a href='https://www.facebook.com/muhamad.hasan.7315/' target='_blank' rel="noopener" aria-label='linkedin'>
+          <AiFillFacebook className='w-8 h-8 cursor-pointer' />
         </a>
         <a href='https://github.com/muhammadhasan01' target='_blank' rel="noopener" aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
