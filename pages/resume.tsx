@@ -73,7 +73,7 @@ const resume = () => {
             </div>
             <div className='overflow-y-auto mt-2 border-orange-800 h-80 lg:h-48'>
               {experiences.map(experience => (
-                <ExperienceCard education={experience} />
+                <ExperienceCard experience={experience} />
               ))}
             </div>
           </motion.div>

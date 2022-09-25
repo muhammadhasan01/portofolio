@@ -13,7 +13,7 @@ const EducationCard: FunctionComponent<{ education: IEducation }> =
       <div>
         <div>
           <div className='my-1 flex justify-left items-center'>
-            <Image src={logoPath} width={logoWidth} height={logoHeight} quality='100' />
+            <Image src={logoPath} width={logoWidth || 30} height={logoHeight || 30} quality='100' />
             <div className='flex flex-col'>
               <div className='ml-2'>
                 <span className='font-bold font-montserrat'>{school}</span>
