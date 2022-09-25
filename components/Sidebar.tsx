@@ -1,4 +1,10 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillPhone, AiFillFacebook } from 'react-icons/ai';
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiFillPhone,
+  AiFillFacebook,
+  AiFillMediumSquare,
+} from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
 import { FaGraduationCap } from 'react-icons/fa';
@@ -62,8 +68,8 @@ const Sidebar = () => {
         <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' rel="noopener" aria-label='linkedin'>
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.instagram.com/muhammadhasan01/' target='_blank' rel="noopener" aria-label='linkedin'>
-          <AiFillInstagram className='w-8 h-8 cursor-pointer' />
+        <a href='https://medium.com/@muhammadhasan50' target='_blank' rel="noopener" aria-label='linkedin'>
+          <AiFillMediumSquare className='w-8 h-8 cursor-pointer' />
         </a>
       </div>
 
