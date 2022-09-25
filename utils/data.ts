@@ -1,4 +1,4 @@
-import { IAchievement, IExperience, INavItem, IProject, IService, ISkill } from './type';
+import { IAchievement, IEducation, IExperience, INavItem, IProject, IService, ISkill } from './type';
 import { BsCircleFill, BsCreditCard2FrontFill, BsStar, BsStarFill } from 'react-icons/bs';
 import { ImDatabase, ImAirplane } from 'react-icons/im';
 import { MdExplore } from 'react-icons/md';
@@ -109,46 +109,71 @@ export const languages: ISkill[] = [
   },
 ];
 
-export const educations: IExperience[] = [
+const EDUCATION_PATH = '/images/educations';
+
+export const educations: IEducation[] = [
   {
-    company: 'Institut Teknologi Bandung',
+    school: 'Institut Teknologi Bandung',
     role: 'Informatics Engineering Student',
-    CompanyIcon: GiElephant,
-    companyIconSize: 25,
+    logoPath: `${EDUCATION_PATH}/itb.png`,
+    logoWidth: 35,
+    logoHeight: 35,
+    SchoolIcon: GiElephant,
+    schoolIconSize: 25,
     duration: '(2018 - 2022)',
     description: 'I am currently pursuing Bachelor of Engineering in Informatics Engineering Institut Teknologi Bandung',
   },
   {
-    company: 'Alfa Centauri SHS',
+    school: 'Alfa Centauri SHS',
     role: 'Mathematics & Science Student',
-    CompanyIcon: BsStarFill,
-    companyIconSize: 23,
+    logoPath: `${EDUCATION_PATH}/alcent.png`,
+    logoWidth: 35,
+    logoHeight: 30,
+    SchoolIcon: BsStarFill,
+    schoolIconSize: 23,
     duration: '(2015 - 2018)',
     description: 'Alhamdulillah, I became The Most Outstanding Student for the school year 2017/2018. ' +
       'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
   },
   {
-    company: 'Alfa Centauri JHS',
+    school: 'Alfa Centauri JHS',
     role: 'Student',
-    CompanyIcon: BsStar,
-    companyIconSize: 23,
+    logoPath: `${EDUCATION_PATH}/alcent.png`,
+    logoWidth: 35,
+    logoHeight: 30,
+    SchoolIcon: BsStar,
+    schoolIconSize: 23,
     duration: '(2012 - 2015)',
     description: 'Alhamdulillah, I Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
   },
-];
+]
+
+const EXPERIENCE_PATH = '/images/experiences';
 
 export const experiences: IExperience[] = [
   {
-    company: 'AdaKerja',
-    role: 'Software Engineer Part Time',
+
+    company: 'GoTo Financial',
+    role: 'Associate Software Engineer',
+    logoPath: `${EXPERIENCE_PATH}/gtf.png`,
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
-    duration: '(May. 2022 - Now)',
-    description: 'Working as a Full Stack Engineer to develop various AdaKerja applications using React, ExpressJs, and AWS'
+    duration: '(Aug. 2022 - Now)',
+    description: 'Working as a Full-time Software Enginner in GoTo (Gojek Tokopedia) Financial'
+  },
+  {
+    company: 'AdaKerja',
+    role: 'Software Engineer Part Time',
+    logoPath: `${EXPERIENCE_PATH}/adakerja.png`,
+    CompanyIcon: FaArtstation,
+    companyIconSize: 23,
+    duration: '(May. 2022 - Aug. 2022)',
+    description: 'Working as a Full Stack Engineer to develop various AdaKerja applications using React, ExpressJs, and MongoDB'
   },
   {
     company: 'Mekari',
     role: 'Software Engineer Intern',
+    logoPath: `${EXPERIENCE_PATH}/mekari.webp`,
     CompanyIcon: GiSevenPointedStar,
     companyIconSize: 23,
     duration: '(Feb. 2022 - May. 2022)',
@@ -157,6 +182,7 @@ export const experiences: IExperience[] = [
   {
     company: 'Traveloka',
     role: 'Backend Engineer Intern',
+    logoPath: `${EXPERIENCE_PATH}/traveloka.png`,
     CompanyIcon: ImAirplane,
     companyIconSize: 20,
     duration: '(Aug. 2021 - Jan. 2022)',
@@ -165,6 +191,7 @@ export const experiences: IExperience[] = [
   {
     company: 'Sayurbox',
     role: 'Software Developer Engineer Intern',
+    logoPath: `${EXPERIENCE_PATH}/sayurbox.png`,
     CompanyIcon: GiFruitBowl,
     companyIconSize: 23,
     duration: '(May. 2021 - Aug. 2021)',
@@ -174,6 +201,7 @@ export const experiences: IExperience[] = [
   {
     company: 'Pinhome',
     role: 'Software Engineer Intern',
+    logoPath: `${EXPERIENCE_PATH}/pinhome.webp`,
     CompanyIcon: AiFillHome,
     companyIconSize: 23,
     duration: '(Jan. 2021 - Mar. 2021)',
