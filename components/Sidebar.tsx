@@ -41,7 +41,7 @@ const Sidebar = () => {
         <a className='flex items-center justify-center px-2 py-2 my-2
         bg-cnc-yellow rounded-full text-orange-800 font-semibold
         dark:text-cnc-yellow border-2 border-red-800 dark:border-cnc-yellow cursor-pointer dark:bg-dark-500'
-           href='/assets/cv-hasan.pdf'
+           href='https://drive.google.com/file/d/10t3m_i9c0N1O19P3nNRaPJJvKSEhwWbh/view?usp=sharing'
            target='_blank'
         >
           <TiDocumentText className='mx-1' size={25} />
