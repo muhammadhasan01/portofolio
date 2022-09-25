@@ -10,6 +10,7 @@ import Bar from '../components/Bar';
 import Head from 'next/head';
 import ExperienceCard from '../components/ExperienceCard';
 import AchievementCard from '../components/AchievementCard';
+import EducationCard from '../components/EducationCard';
 
 const resume = () => {
   return (
@@ -39,7 +40,7 @@ const resume = () => {
             </div>
             <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
               {educations.map(education => (
-                <ExperienceCard education={education} />
+                <EducationCard education={education} />
               ))}
             </div>
           </motion.div>
@@ -72,7 +73,7 @@ const resume = () => {
             </div>
             <div className='overflow-y-auto mt-2 border-orange-800 h-80 lg:h-48'>
               {experiences.map(experience => (
-                <ExperienceCard education={experience} />
+                <ExperienceCard experience={experience} />
               ))}
             </div>
           </motion.div>

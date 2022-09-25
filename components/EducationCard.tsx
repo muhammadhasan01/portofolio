@@ -1,22 +1,22 @@
 import { FunctionComponent } from 'react';
-import { IExperience } from '../utils/type';
+import { IEducation } from '../utils/type';
 import Image from 'next/image';
 
-const ExperienceCard: FunctionComponent<{ experience: IExperience }> =
+const EducationCard: FunctionComponent<{ education: IEducation }> =
   ({
-     experience: {
-       company, role, description, duration,
-       logoPath, logoWidth, logoHeight,
+     education: {
+       school, role, description, duration, logoPath,
+       logoWidth, logoHeight,
      },
    }) => {
     return (
       <div>
         <div>
           <div className='my-1 flex justify-left items-center'>
-            <Image src={logoPath} width={logoWidth} height={logoHeight} quality='100' />
+            <Image src={logoPath} width={logoWidth || 30} height={logoHeight || 30} quality='100' />
             <div className='flex flex-col'>
               <div className='ml-2'>
-                <span className='font-bold font-montserrat'>{company}</span>
+                <span className='font-bold font-montserrat'>{school}</span>
                 <span className='ml-1 hidden text-xs xl:inline'>
                   {duration}
                 </span>
@@ -34,4 +34,4 @@ const ExperienceCard: FunctionComponent<{ experience: IExperience }> =
     );
   };
 
-export default ExperienceCard;
+export default EducationCard;
