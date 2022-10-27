@@ -109,7 +109,8 @@ export const languages: ISkill[] = [
   },
 ];
 
-const EDUCATION_PATH = '/images/educations';
+const CDN_PATH = 'https://ik.imagekit.io/2louui6ojn7/portofolio';
+const EDUCATION_PATH = `${CDN_PATH}/educations`;
 
 export const educations: IEducation[] = [
   {
@@ -148,7 +149,7 @@ export const educations: IEducation[] = [
   },
 ]
 
-const EXPERIENCE_PATH = '/images/experiences';
+const EXPERIENCE_PATH = `${CDN_PATH}/experiences`;
 
 export const experiences: IExperience[] = [
   {
