@@ -282,6 +282,8 @@ export const achievements: IAchievement[] = [
   },
 ];
 
+const PROJECT_PATH = `${CDN_PATH}/projects`;
+
 export const projectData: IProject[] = [
   {
     id: 1,
@@ -289,7 +291,7 @@ export const projectData: IProject[] = [
     description: 'Compete HMIF Tech is a website to give Competition and Community info to the world, ' +
       'this website includes starting guide to compete in competitions including ' +
       'Competitive Programming, Capture The Flag, Data Science, UI/UX Competition, and Game Development',
-    imagePath: '/images/projects/compete-hmif-tech-web.webp',
+    imagePath: `${PROJECT_PATH}/compete-hmif-tech-web.webp`,
     deployedUrl: 'https://compete.hmif.tech/',
     githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
     keyTechs: ['React', 'NextJs', 'GatsbyJs', 'TailwindCSS', 'Markdown', 'LaTeX'],
@@ -299,7 +301,7 @@ export const projectData: IProject[] = [
     name: 'Fitness Android Application',
     description: 'Fitness Android Application is an android application that can support exercise activities that contain ' +
       'several features such as Sport News, Training Tracker, Training History, and Training Scheduler.',
-    imagePath: '/images/projects/fitness-android.webp',
+    imagePath: `${PROJECT_PATH}/fitness-android.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/fitness-android-application',
     keyTechs: ['Android', 'Kotlin'],
@@ -310,7 +312,7 @@ export const projectData: IProject[] = [
     description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial! ' +
       'so that in our game there are several additional features, such as LAN multiplayer, room system, bots, new weapons, ' +
       'money rush mode, and others.',
-    imagePath: '/images/projects/tanks-extended.webp',
+    imagePath: `${PROJECT_PATH}/tanks-extended.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/tanks-extended',
     keyTechs: ['Unity', 'C#'],
@@ -320,7 +322,7 @@ export const projectData: IProject[] = [
     name: 'Academic Information System',
     description: 'This Academic Information System application was developed to meet the needs of academic administration activities on the STEI campus (School of Electrical and Informatics Engineering). ' +
       'This Academic Information System is managed by the admin and can be used by students and lecturers.',
-    imagePath: '/images/projects/SIAK.webp',
+    imagePath: `${PROJECT_PATH}/SIAK.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/aplikasi-sistem-informasi-akademik',
     keyTechs: ['MySQL', 'Python', 'PyQt', 'GUI'],
@@ -331,7 +333,7 @@ export const projectData: IProject[] = [
     description: 'Money Monitoring Application is an application to monitor the finances of units and subunits at ' +
       'the School of Electrical and Informatics Engineering ITB. ' +
       'This app is built with ReactJS, React-Bootstrap, and several additional libraries.',
-    imagePath: '/images/projects/stei-anggaran.webp',
+    imagePath: `${PROJECT_PATH}/stei-anggaran.webp`,
     deployedUrl: 'https://stei-monitoring-anggaran-15.herokuapp.com/',
     githubUrl: 'https://github.com/muhammadhasan01/aplikasi-monitor-keuangan-frontend',
     keyTechs: ['MongoDB', 'ExpressJs', 'ReactJs', 'NodeJs', 'Bootstrap', 'JWT'],
@@ -344,7 +346,7 @@ export const projectData: IProject[] = [
       'namely land, character, and skill cards. Each of these dueling avatar cards has its own function, ' +
       'and of course, the contents of these cards are based on Avatar: The Last Airbender. ' +
       'The main objective of this game is to defeat the opposing player by reducing the opponent\'s health point to 0 or less.',
-    imagePath: '/images/projects/avatar-duel.webp',
+    imagePath: `${PROJECT_PATH}/avatar-dual.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/AvatarDuelGameCard',
     keyTechs: ['Java', 'JavaFX', 'OOP', 'GUI'],
@@ -354,7 +356,7 @@ export const projectData: IProject[] = [
     name: 'Calculator Application',
     description: 'Calculator application is an application created using the Java programming language with GUI Swing. ' +
       'This Calculator application, as the name implies, is a calculator that can perform operations on mathematical expressions such as addition, subtraction, multiplication, and division.',
-    imagePath: '/images/projects/calculator.webp',
+    imagePath: `${PROJECT_PATH}/calculator.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/Kalkulator_Java_Swing',
     keyTechs: ['Java', 'GUI', 'Java Swing'],
@@ -365,7 +367,7 @@ export const projectData: IProject[] = [
     description: 'Halma is a strategy board game. The core of the project is implementing AI in the bot (computer player), ' +
       'using Minimax Algorithm, Local Search Algorithms (Hill Climbing or Simulated Annealing), ' +
       'and both, and finding out how good each algorithm performs.',
-    imagePath: '/images/projects/halma-ai.webp',
+    imagePath: `${PROJECT_PATH}/halma-ai.webp`,
     deployedUrl: 'https://halma-euy.netlify.app/',
     githubUrl: 'https://github.com/muhammadhasan01/halma-AI',
     keyTechs: ['AI', 'HTML', 'CSS', 'Javascript'],
@@ -374,7 +376,7 @@ export const projectData: IProject[] = [
     id: 9,
     name: 'Golang RESTful API Forum',
     description: 'Golang RESTful API project provides the backend for a discussion forum with Users, Threads and Posts',
-    imagePath: '/images/projects/golang.webp',
+    imagePath: `${PROJECT_PATH}/golang.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/go-rest-api-forum',
     keyTechs: ['Golang', 'RESTful API', 'PostgreSQL'],
@@ -385,7 +387,7 @@ export const projectData: IProject[] = [
     description: 'This is my personal website where I my put my information including activities, ' +
       'resume, and projects. Created with NextJs, Typescript, React, Framer Motion, and Tailwind CSS. ' +
       '(This is what you are seeing right now :D)',
-    imagePath: '/images/projects/personal-website.webp',
+    imagePath: `${PROJECT_PATH}/personal-website.webp`,
     deployedUrl: 'http://mhasan01.com/',
     githubUrl: 'https://github.com/muhammadhasan01/portofolio',
     keyTechs: ['NextJs', 'React', 'Framer Motion', 'Tailwind CSS']
@@ -394,7 +396,7 @@ export const projectData: IProject[] = [
     id: 11,
     name: 'Competitive Programming Repo',
     description: 'Collection of my competitive programming codes including libraries and competition solutions',
-    imagePath: '/images/projects/cp.webp',
+    imagePath: `${PROJECT_PATH}/cp.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/cp',
     keyTechs: ['C++', 'Algorithms', 'Data Structure']
@@ -404,7 +406,7 @@ export const projectData: IProject[] = [
     name: 'Willy Wangky Web',
     description: 'Willi Wangky Choco Factory is a web-based online chocolate trading application.' +
       ' This application is made using PHP on the backend and HTML, CSS, and Javascript on the frontend.',
-    imagePath: '/images/projects/willy-wangky.webp',
+    imagePath: `${PROJECT_PATH}/willy-wangky.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/willy-wangky-web',
     keyTechs: ['HTML', 'CSS', 'Javascript', 'PHP']
