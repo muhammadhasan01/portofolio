@@ -27,12 +27,12 @@ const projects = () => {
         animate='animate'
       >
         {
-          projectData.map(project => (
+          projectData.map((project, id) => (
             <motion.div
               className='col-span-12 sm:col-span-6 border-2 border-cnc-yellow
               lg:col-span-4 p-2 bg-cnc-yellow dark:bg-dark rounded-2xl'
               variants={fadeInUp}
-              key={project.id}
+              key={id}
             >
               <ProjectCard project={project} key={project.name} showDetail={showDetail} setShowDetail={setShowDetail} />
             </motion.div>
