@@ -294,6 +294,15 @@ const PROJECT_PATH = `${CDN_PATH}/projects`;
 export const projectData: IProject[] = [
   {
     id: 1,
+    name: 'My Wedding Website',
+    description: 'Wedding Website of Ismi Dinda Muslimah & Muhammad Hasan.',
+    imagePath: `${PROJECT_PATH}/ismi-and-hasan-wedding.webp`,
+    deployedUrl: 'https://ismi.mhasan01.com/',
+    githubUrl: 'https://github.com/muhammadhasan01/the-wedding-of-ismi-and-hasan',
+    keyTechs: ['React', 'NextJs', 'DaisyUI', 'TailwindCSS', 'TypeScript'],
+  },
+  {
+    id: 2,
     name: 'Compete HMIF Tech',
     description: 'Compete HMIF Tech is a website to give Competition and Community info to the world, ' +
       'this website includes starting guide to compete in competitions including ' +
@@ -304,7 +313,7 @@ export const projectData: IProject[] = [
     keyTechs: ['React', 'NextJs', 'GatsbyJs', 'TailwindCSS', 'Markdown', 'LaTeX'],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Fitness Android Application',
     description: 'Fitness Android Application is an android application that can support exercise activities that contain ' +
       'several features such as Sport News, Training Tracker, Training History, and Training Scheduler.',
@@ -314,7 +323,7 @@ export const projectData: IProject[] = [
     keyTechs: ['Android', 'Kotlin'],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Tanks Game Extended',
     description: 'Tanks Unity Game Extended! is a Tanks Game made with Unity. This game is a development of the Game Tanks Tutorial! ' +
       'so that in our game there are several additional features, such as LAN multiplayer, room system, bots, new weapons, ' +
@@ -325,7 +334,7 @@ export const projectData: IProject[] = [
     keyTechs: ['Unity', 'C#'],
   },
   {
-    id: 4,
+    id: 5,
     name: 'Academic Information System',
     description: 'This Academic Information System application was developed to meet the needs of academic administration activities on the STEI campus (School of Electrical and Informatics Engineering). ' +
       'This Academic Information System is managed by the admin and can be used by students and lecturers.',
@@ -335,7 +344,7 @@ export const projectData: IProject[] = [
     keyTechs: ['MySQL', 'Python', 'PyQt', 'GUI'],
   },
   {
-    id: 5,
+    id: 6,
     name: 'Money Monitoring Application',
     description: 'Money Monitoring Application is an application to monitor the finances of units and subunits at ' +
       'the School of Electrical and Informatics Engineering ITB. ' +
@@ -346,7 +355,7 @@ export const projectData: IProject[] = [
     keyTechs: ['MongoDB', 'ExpressJs', 'ReactJs', 'NodeJs', 'Bootstrap', 'JWT'],
   },
   {
-    id: 6,
+    id: 7,
     name: 'Avatar Duel Game Card',
     description: 'Avatar Duel Game Card is a card game application created with JavaFX. ' +
       'This game can be played by two people, each person has a card containing 3 types, ' +
@@ -357,16 +366,6 @@ export const projectData: IProject[] = [
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/AvatarDuelGameCard',
     keyTechs: ['Java', 'JavaFX', 'OOP', 'GUI'],
-  },
-  {
-    id: 7,
-    name: 'Calculator Application',
-    description: 'Calculator application is an application created using the Java programming language with GUI Swing. ' +
-      'This Calculator application, as the name implies, is a calculator that can perform operations on mathematical expressions such as addition, subtraction, multiplication, and division.',
-    imagePath: `${PROJECT_PATH}/calculator.webp`,
-    deployedUrl: null,
-    githubUrl: 'https://github.com/muhammadhasan01/Kalkulator_Java_Swing',
-    keyTechs: ['Java', 'GUI', 'Java Swing'],
   },
   {
     id: 8,
@@ -381,6 +380,25 @@ export const projectData: IProject[] = [
   },
   {
     id: 9,
+    name: 'Discord Bot',
+    description: 'Simple discord bot that can give you quotes and handle your todo tasks',
+    imagePath: `${PROJECT_PATH}/discord-bot.webp`,
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/discord-bot',
+    keyTechs: ['Discord API', 'Python', 'MySQL', 'Docker'],
+  },
+  {
+    id: 10,
+    name: 'Calculator Application',
+    description: 'Calculator application is an application created using the Java programming language with GUI Swing. ' +
+      'This Calculator application, as the name implies, is a calculator that can perform operations on mathematical expressions such as addition, subtraction, multiplication, and division.',
+    imagePath: `${PROJECT_PATH}/calculator.webp`,
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/Kalkulator_Java_Swing',
+    keyTechs: ['Java', 'GUI', 'Java Swing'],
+  },
+  {
+    id: 11,
     name: 'Golang RESTful API Forum',
     description: 'Golang RESTful API project provides the backend for a discussion forum with Users, Threads and Posts',
     imagePath: `${PROJECT_PATH}/golang.webp`,
@@ -389,7 +407,43 @@ export const projectData: IProject[] = [
     keyTechs: ['Golang', 'RESTful API', 'PostgreSQL'],
   },
   {
-    id: 10,
+    id: 12,
+    name: 'Conway Game Of Life',
+    description: 'Conway Game of Life Implementation in Java.',
+    imagePath: `${PROJECT_PATH}/conway.webp`,
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/conway-game-of-life-java',
+    keyTechs: ['Java', 'TDD', 'Gradle', 'Game'],
+  },
+  {
+    id: 13,
+    name: 'Chat Application',
+    description: 'Simple Realtime Chat Application',
+    imagePath: `${PROJECT_PATH}/chat.webp`,
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/chat-application',
+    keyTechs: ['React', 'ExpressJs', 'Socket.io', 'Vite', 'TypeScript'],
+  },
+  {
+    id: 14,
+    name: 'URL Shortener',
+    description: 'Fullstack URL Shortener',
+    imagePath: `${PROJECT_PATH}/url-shortener.webp`,
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/url-shortener',
+    keyTechs: ['MongoDB', 'ExpressJs', 'React', 'NodeJs', 'Vite', 'TypeScript', 'Docker'],
+  },
+  {
+    id: 15,
+    name: 'Notal Autograder',
+    description: 'Control Flow Graph (CFG) Based Notasi Algoritmik Autograder is a system that can grade student Notasi Algoritmik submission by comparing its CFG structure with instructor Notasi Algoritmik submission\'s CFG structure.',
+    imagePath: `${PROJECT_PATH}/notal-autograder.webp`,
+    deployedUrl: null,
+    githubUrl: 'https://github.com/muhammadhasan01/notal-autograder',
+    keyTechs: ['Autograder', 'Python', 'Flask', 'Docker', 'CFG', 'AST'],
+  },
+  {
+    id: 16,
     name: 'Personal Website',
     description: 'This is my personal website where I my put my information including activities, ' +
       'resume, and projects. Created with NextJs, Typescript, React, Framer Motion, and Tailwind CSS. ' +
@@ -400,7 +454,7 @@ export const projectData: IProject[] = [
     keyTechs: ['NextJs', 'React', 'Framer Motion', 'Tailwind CSS'],
   },
   {
-    id: 11,
+    id: 17,
     name: 'Competitive Programming Repo',
     description: 'Collection of my competitive programming codes including libraries and competition solutions',
     imagePath: `${PROJECT_PATH}/cp.webp`,
@@ -409,7 +463,7 @@ export const projectData: IProject[] = [
     keyTechs: ['C++', 'Algorithms', 'Data Structure'],
   },
   {
-    id: 12,
+    id: 18,
     name: 'Willy Wangky Web',
     description: 'Willi Wangky Choco Factory is a web-based online chocolate trading application.' +
       ' This application is made using PHP on the backend and HTML, CSS, and Javascript on the frontend.',
