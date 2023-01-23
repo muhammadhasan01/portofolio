@@ -162,7 +162,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(Aug. 2022 - Now)',
-    description: 'Working as a Full-time Software Enginner GoTo (Gojek Tokopedia) Financial in Clearing & Settlements Team',
+    description: 'Working as a Full-time Software Enginner at GoTo (Gojek Tokopedia) Financial in Clearing & Settlements Team',
   },
   {
     company: 'AdaKerja',
