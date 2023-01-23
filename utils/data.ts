@@ -122,7 +122,7 @@ export const educations: IEducation[] = [
     SchoolIcon: GiElephant,
     schoolIconSize: 25,
     duration: '(2018 - 2022)',
-    description: 'I am currently pursuing Bachelor of Engineering in Informatics Engineering Institut Teknologi Bandung',
+    description: 'I received my bachelor degree in Informatics Engineering from Institut Teknologi Bandung with Cum Laude Honor',
   },
   {
     school: 'Alfa Centauri SHS',
@@ -133,7 +133,7 @@ export const educations: IEducation[] = [
     SchoolIcon: BsStarFill,
     schoolIconSize: 23,
     duration: '(2015 - 2018)',
-    description: 'Alhamdulillah, I became The Most Outstanding Student for the school year 2017/2018. ' +
+    description: 'I became The Most Outstanding Student for the school year 2017/2018. ' +
       'Activities includes mathematics olympics and CMA (Centaurian Moslem\'s Atmosphere) activity',
   },
   {
@@ -145,7 +145,7 @@ export const educations: IEducation[] = [
     SchoolIcon: BsStar,
     schoolIconSize: 23,
     duration: '(2012 - 2015)',
-    description: 'Alhamdulillah, I Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
+    description: 'I Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
   },
 ];
 
@@ -162,7 +162,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(Aug. 2022 - Now)',
-    description: 'Working as a Full-time Software Enginner in GoTo (Gojek Tokopedia) Financial',
+    description: 'Working as a Full-time Software Enginner GoTo (Gojek Tokopedia) Financial in Clearing & Settlements Team',
   },
   {
     company: 'AdaKerja',
@@ -265,6 +265,13 @@ export const achievements: IAchievement[] = [
     description: 'Shopee Code League is a 3-week coding challenge consisting of 3 coding competitions (data analytics, data science, and algorithms) ' +
       'open to all students and professionals across the region.',
     Icon: FaGlobe,
+  },
+  {
+    title: 'Ganesha Karsa Awardee 2022',
+    issuedBy: 'Institut Teknologi Bandung',
+    description: 'Ganesha Karsa is an award given by Institut Teknologi Bandung every year for ' +
+      'getting national or international achievement representing ITB in the field of scientific or social community.',
+    Icon: GiElephantHead,
   },
   {
     title: 'Ganesha Karsa Awardee 2021',
