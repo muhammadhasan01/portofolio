@@ -19,15 +19,11 @@ const index = () => {
         </title>
       </Head>
       <div className='mb-3 font-medium text-large' id='about'>
-        Hello! My name is Hasan, I am very passionate in learning programming and software
-        engineering. <br />
-
-        I like doing programming competitions because it hones my programming skill and problem solving
-        skills. <br />
-
-        In my free time, I like to explore all sort of stuff about software engineering. It's a never
-        ending journey and
-        I hope to become better every day, bit by bit. <br />
+        I am a passionate software engineer constantly seeking new challenges and opportunities to grow. <br />
+        I excel in problem solving and have a deep understanding of algorithms and data structures,
+        as evidenced by my past competitive programming awards. <br />
+        I have gained diverse experience through work on various tools and projects for multiple companies,
+        as well as personal side projects which have sharpened my skills.
       </div>
       <div className='p-4 mt-5 bg-cnc-yellow dark:bg-dark-500 flex-grow border-t-4 border-cnc-yellow'
            style={{ 'marginLeft': '-1.5rem', 'marginRight': '-1.5rem' }}

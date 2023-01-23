@@ -3,11 +3,11 @@ import {
   AiFillLinkedin,
   AiFillPhone,
   AiFillFacebook,
-  AiFillMediumSquare,
+  AiFillMediumSquare
 } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
-import { FaGraduationCap } from 'react-icons/fa';
+import { AiFillCodeSandboxCircle } from 'react-icons/ai';
 import { TiDocumentText } from 'react-icons/ti';
 import { SiCodeforces } from 'react-icons/si';
 import { BsFillMoonFill, BsSunFill } from 'react-icons/bs';
@@ -41,8 +41,9 @@ const Sidebar = () => {
         <p
           className='flex items-center justify-center px-2 py-2 my-3 border-2 border-red-800 cursor-pointer
           dark:border-cnc-yellow font-semibold dark:text-cnc-yellow text-orange-800 bg-cnc-yellow dark:bg-dark-500 rounded-full'>
-          <FaGraduationCap className='mx-1' size={20} />
-          <span className='font-montserrat'>Final Year Student</span></p>
+          <AiFillCodeSandboxCircle className='mx-1' size={20} />
+          <span className='font-montserrat'>Software Engineer</span>
+        </p>
         {/* Resume */}
         <a className='flex items-center justify-center px-2 py-2 my-2
         bg-cnc-yellow rounded-full text-orange-800 font-semibold
@@ -56,19 +57,19 @@ const Sidebar = () => {
       </div>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-cnc-yellow w-9/12 md:w-full mx-auto'>
-        <a href='https://codeforces.com/profile/muhammadhasan01' target='_blank' rel="noopener" aria-label='codeforces'>
+        <a href='https://codeforces.com/profile/muhammadhasan01' target='_blank' rel='noopener' aria-label='codeforces'>
           <SiCodeforces className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.facebook.com/muhamad.hasan.7315/' target='_blank' rel="noopener" aria-label='linkedin'>
+        <a href='https://www.facebook.com/muhamad.hasan.7315/' target='_blank' rel='noopener' aria-label='linkedin'>
           <AiFillFacebook className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://github.com/muhammadhasan01' target='_blank' rel="noopener" aria-label='github'>
+        <a href='https://github.com/muhammadhasan01' target='_blank' rel='noopener' aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' rel="noopener" aria-label='linkedin'>
+        <a href='https://www.linkedin.com/in/muhammadhasan01' target='_blank' rel='noopener' aria-label='linkedin'>
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://medium.com/@muhammadhasan50' target='_blank' rel="noopener" aria-label='linkedin'>
+        <a href='https://medium.com/@muhammadhasan50' target='_blank' rel='noopener' aria-label='linkedin'>
           <AiFillMediumSquare className='w-8 h-8 cursor-pointer' />
         </a>
       </div>
