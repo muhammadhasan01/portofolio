@@ -8,10 +8,9 @@ import { GiElephant, GiFruitBowl, GiElephantHead, GiSevenPointedStar } from 'rea
 
 export const services: IService[] = [
   {
-    title: 'Competitive Programming',
-    about: 'I like to compete in programming,' +
-      ' it\'s fun to learn and getting better at algorithms, data structure, and mostly problem solving',
-    Icon: FaLaptopCode,
+    title: 'Exploring Tech & Development Stuff',
+    about: 'I love to explore all sort of tech and development stuff, anything that grasp my interest, I\'ll try to explore it',
+    Icon: MdExplore,
   },
   {
     title: 'Backend Development',
@@ -25,9 +24,10 @@ export const services: IService[] = [
     Icon: BsCreditCard2FrontFill,
   },
   {
-    title: 'Exploring Tech & Development Stuff',
-    about: 'I love to explore all sort of tech and development stuff, anything that grasp my interest, I\'ll try to explore it',
-    Icon: MdExplore,
+    title: 'Competitive Programming',
+    about: 'I like to compete in programming,' +
+      ' it\'s fun to learn and getting better at algorithms, data structure, and mostly problem solving',
+    Icon: FaLaptopCode,
   },
 ];
 
@@ -147,7 +147,7 @@ export const educations: IEducation[] = [
     duration: '(2012 - 2015)',
     description: 'Alhamdulillah, I Got the Highest National Junior High School Exam on Batch 2012. Activities includes mathematics olympics',
   },
-]
+];
 
 const EXPERIENCE_PATH = `${CDN_PATH}/experiences`;
 
@@ -162,7 +162,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(Aug. 2022 - Now)',
-    description: 'Working as a Full-time Software Enginner in GoTo (Gojek Tokopedia) Financial'
+    description: 'Working as a Full-time Software Enginner in GoTo (Gojek Tokopedia) Financial',
   },
   {
     company: 'AdaKerja',
@@ -173,7 +173,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(May. 2022 - Aug. 2022)',
-    description: 'Working as a Full Stack Engineer to develop various AdaKerja applications using React, ExpressJs, and MongoDB'
+    description: 'Working as a Full Stack Engineer to develop various AdaKerja applications using React, ExpressJs, and MongoDB',
   },
   {
     company: 'Mekari',
@@ -184,7 +184,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: GiSevenPointedStar,
     companyIconSize: 23,
     duration: '(Feb. 2022 - May. 2022)',
-    description: 'Working as a Full Stack Engineer in Account and Launchpad Team using Ruby on Rails, VueJs, Docker, and Kong API Gateway'
+    description: 'Working as a Full Stack Engineer in Account and Launchpad Team using Ruby on Rails, VueJs, Docker, and Kong API Gateway',
   },
   {
     company: 'Traveloka',
@@ -388,9 +388,9 @@ export const projectData: IProject[] = [
       'resume, and projects. Created with NextJs, Typescript, React, Framer Motion, and Tailwind CSS. ' +
       '(This is what you are seeing right now :D)',
     imagePath: `${PROJECT_PATH}/personal-website.webp`,
-    deployedUrl: 'http://mhasan01.com/',
+    deployedUrl: 'https://mhasan01.com/',
     githubUrl: 'https://github.com/muhammadhasan01/portofolio',
-    keyTechs: ['NextJs', 'React', 'Framer Motion', 'Tailwind CSS']
+    keyTechs: ['NextJs', 'React', 'Framer Motion', 'Tailwind CSS'],
   },
   {
     id: 11,
@@ -399,7 +399,7 @@ export const projectData: IProject[] = [
     imagePath: `${PROJECT_PATH}/cp.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/cp',
-    keyTechs: ['C++', 'Algorithms', 'Data Structure']
+    keyTechs: ['C++', 'Algorithms', 'Data Structure'],
   },
   {
     id: 12,
@@ -409,6 +409,6 @@ export const projectData: IProject[] = [
     imagePath: `${PROJECT_PATH}/willy-wangky.webp`,
     deployedUrl: null,
     githubUrl: 'https://github.com/muhammadhasan01/willy-wangky-web',
-    keyTechs: ['HTML', 'CSS', 'Javascript', 'PHP']
+    keyTechs: ['HTML', 'CSS', 'Javascript', 'PHP'],
   },
 ];
