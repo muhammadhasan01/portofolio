@@ -56,7 +56,7 @@ const Sidebar = () => {
       </div>
       {/*Social Icons*/}
       <div className='flex justify-around my-5 text-cnc-yellow w-9/12 md:w-full mx-auto'>
-        <a href='https://clist.by/coder/muhammadhasan01' target='_blank' rel='noopener' aria-label='codeforces'>
+        <a href='https://codeforces.com/profile/muhammadhasan01' target='_blank' rel='noopener' aria-label='codeforces'>
           <SiCodeforces className='w-8 h-8 cursor-pointer' />
         </a>
         <a href='https://www.facebook.com/muhamad.hasan.7315/' target='_blank' rel='noopener' aria-label='linkedin'>
