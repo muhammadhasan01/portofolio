@@ -1,7 +1,6 @@
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillFacebook,
   AiFillMediumSquare
 } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
@@ -11,6 +10,7 @@ import { TiDocumentText } from 'react-icons/ti';
 import { SiCodeforces } from 'react-icons/si';
 import { BsFillMoonFill, BsSunFill } from 'react-icons/bs';
 import { GrMail } from 'react-icons/gr';
+import { FaBlogger } from 'react-icons/fa';
 
 import Image from 'next/image';
 
@@ -59,8 +59,8 @@ const Sidebar = () => {
         <a href='https://codeforces.com/profile/muhammadhasan01' target='_blank' rel='noopener' aria-label='codeforces'>
           <SiCodeforces className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href='https://www.facebook.com/muhamad.hasan.7315/' target='_blank' rel='noopener' aria-label='linkedin'>
-          <AiFillFacebook className='w-8 h-8 cursor-pointer' />
+        <a href='https://blog.mhasan01.com' target='_blank' rel='noopener' aria-label='linkedin'>
+          <FaBlogger className='w-8 h-8 cursor-pointer' />
         </a>
         <a href='https://github.com/muhammadhasan01' target='_blank' rel='noopener' aria-label='github'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
