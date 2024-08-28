@@ -30,39 +30,6 @@ const resume = () => {
       <div className='grid lg:gap-6 lg:grid-cols-2'>
         <div>
           <motion.div variants={fadeInUp} initial='initial' animate='animate'
-                      className='bg-cnc-yellow dark:bg-dark-700 lg:dark:bg-dark-500 -mx-1 p-5 lg:mx-0 lg:py-3 dark:border-y-0 dark:lg:border-y-2
-                      lg:px-4 border-2 border-orange-800 dark:border-cnc-yellow
-                      lg:rounded-2xl text-orange-800 dark:text-cnc-yellow'
-          >
-            <div className='py-2 text-2xl font-bold flex justify-left items-center'>
-              <FaBookReader className='mr-3' size={30} />
-              <span className='font-montserrat'>Education</span>
-            </div>
-            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
-              {educations.map(education => (
-                <EducationCard education={education} />
-              ))}
-            </div>
-          </motion.div>
-          <div className='lg:rounded-2xl border-orange-800 dark:border-y-0 dark:lg:border-y-2
-            dark:border-cnc-yellow bg-cnc-yellow dark:bg-dark-700 lg:dark:bg-dark-500 border-2 -mx-1 lg:mx-0 mt-4
-            pb-3 pt-1 text-orange-800 dark:text-cnc-yellow py-3 px-4 lg:my-4'
-          >
-            <div className='my-5 text-medium lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
-              <SiReactos className='mr-2' size={25} />
-              <span>Languages & Framework</span>
-            </div>
-            <div className='my-1 overflow-y-auto pr-3 h-60 lg:h-40'>
-              {
-                languages.map(language => (
-                  <Bar data={language} />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-        <div>
-          <motion.div variants={fadeInUp} initial='initial' animate='animate'
                       className='bg-cnc-yellow dark:bg-dark-700 lg:dark:bg-dark-500 py-3 px-4 border-2 dark:border-y-0 dark:lg:border-y-2
                       mt-4 lg:mt-0 border-orange-800 dark:border-cnc-yellow -mx-1 lg:mx-0
                       lg:rounded-2xl text-orange-800 dark:text-cnc-yellow mb-3 lg:my-1'
@@ -89,6 +56,39 @@ const resume = () => {
               {
                 achievements.map(achievement => (
                   <AchievementCard achievement={achievement} />
+                ))
+              }
+            </div>
+          </div>
+        </div>
+        <div>
+          <motion.div variants={fadeInUp} initial='initial' animate='animate'
+                      className='bg-cnc-yellow dark:bg-dark-700 lg:dark:bg-dark-500 -mx-1 p-5 lg:mx-0 lg:py-3 dark:border-y-0 dark:lg:border-y-2
+                      lg:px-4 border-2 border-orange-800 dark:border-cnc-yellow
+                      lg:rounded-2xl text-orange-800 dark:text-cnc-yellow'
+          >
+            <div className='py-2 text-2xl font-bold flex justify-left items-center'>
+              <FaBookReader className='mr-3' size={30} />
+              <span className='font-montserrat'>Education</span>
+            </div>
+            <div className='overflow-y-auto mt-2 border-orange-800 lg:h-48'>
+              {educations.map(education => (
+                <EducationCard education={education} />
+              ))}
+            </div>
+          </motion.div>
+          <div className='lg:rounded-2xl border-orange-800 dark:border-y-0 dark:lg:border-y-2
+            dark:border-cnc-yellow bg-cnc-yellow dark:bg-dark-700 lg:dark:bg-dark-500 border-2 -mx-1 lg:mx-0 mt-4
+            pb-3 pt-1 text-orange-800 dark:text-cnc-yellow py-3 px-4 lg:my-4'
+          >
+            <div className='my-5 text-medium lg:text-2xl font-bold font-montserrat flex justify-left items-center'>
+              <SiReactos className='mr-2' size={25} />
+              <span>Languages & Framework</span>
+            </div>
+            <div className='my-1 overflow-y-auto pr-3 h-60 lg:h-40'>
+              {
+                languages.map(language => (
+                  <Bar data={language} />
                 ))
               }
             </div>
