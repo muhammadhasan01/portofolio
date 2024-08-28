@@ -154,15 +154,15 @@ const EXPERIENCE_PATH = `${CDN_PATH}/experiences`;
 export const experiences: IExperience[] = [
   {
 
-    company: 'GoTo Financial',
-    role: 'Associate Software Engineer',
+    company: 'GoTo Group',
+    role: 'Software Engineer',
     logoPath: `${EXPERIENCE_PATH}/goto.png`,
     logoWidth: 60,
     logoHeight: 25,
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(Aug. 2022 - Now)',
-    description: 'Working as a Full-time Software Enginner at GoTo (Gojek Tokopedia) Financial in Clearing & Settlements Team',
+    description: 'Working as a Full-time Software Enginner at GoTo (Gojek Tokopedia) Group in Clearing & Settlements Team',
   },
   {
     company: 'AdaKerja',
