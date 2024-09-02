@@ -161,8 +161,8 @@ export const experiences: IExperience[] = [
     logoHeight: 25,
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
-    duration: '(Aug. 2022 - Now)',
-    description: 'Working as a Full-time Software Enginner at GoTo (Gojek Tokopedia) Group in Clearing & Settlements Team',
+    duration: '(Aug. 2022 - Aug. 2024)',
+    description: 'Working as a Full Stack Software Enginner at GoTo (Gojek Tokopedia) Group building IHRT (In House Reconciliation Tools) using Java, PostgreSQL, Apache Kafka, and React',
   },
   {
     company: 'AdaKerja',
@@ -173,7 +173,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(May. 2022 - Aug. 2022)',
-    description: 'Working as a Full Stack Engineer to develop various AdaKerja applications using React, ExpressJs, and MongoDB',
+    description: 'Working as a Full Stack Software Engineer to develop various AdaKerja applications using React, ExpressJs, and MongoDB',
   },
   {
     company: 'Mekari',
