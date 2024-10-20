@@ -109,8 +109,8 @@ export const languages: ISkill[] = [
   },
 ];
 
-const CDN_PATH = 'https://ik.imagekit.io/2louui6ojn7/portofolio';
-const EDUCATION_PATH = `${CDN_PATH}/educations`;
+const LOCAL_PATH = '/images';
+const EDUCATION_PATH = `${LOCAL_PATH}/educations`;
 
 export const educations: IEducation[] = [
   {
@@ -149,9 +149,21 @@ export const educations: IEducation[] = [
   },
 ];
 
-const EXPERIENCE_PATH = `${CDN_PATH}/experiences`;
+const EXPERIENCE_PATH = `${LOCAL_PATH}/experiences`;
 
 export const experiences: IExperience[] = [
+  {
+
+    company: 'ByteDance',
+    role: 'Software Engineer',
+    logoPath: `${EXPERIENCE_PATH}/bytedance.png`,
+    logoWidth: 45,
+    logoHeight: 45,
+    CompanyIcon: FaArtstation,
+    companyIconSize: 22,
+    duration: '(Sep. 2024 - Now)',
+    description: 'Working as a Backend Software Engineer at ByteDance building Internal Travel App using Golang, Java, and MySQL',
+  },
   {
 
     company: 'GoTo Group',
@@ -162,14 +174,14 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(Aug. 2022 - Aug. 2024)',
-    description: 'Working as a Full Stack Software Enginner at GoTo (Gojek Tokopedia) Group building IHRT (In House Reconciliation Tools) using Java, PostgreSQL, Apache Kafka, and React',
+    description: 'Working as a Full Stack Software Engineer at GoTo (Gojek Tokopedia) Group building IHRT (In House Reconciliation Tools) using Java, PostgreSQL, Apache Kafka, and React',
   },
   {
     company: 'AdaKerja',
     role: 'Software Engineer Part Time',
     logoPath: `${EXPERIENCE_PATH}/adakerja.png`,
-    logoWidth: 40,
-    logoHeight: 40,
+    logoWidth: 44,
+    logoHeight: 44,
     CompanyIcon: FaArtstation,
     companyIconSize: 23,
     duration: '(May. 2022 - Aug. 2022)',
@@ -179,8 +191,8 @@ export const experiences: IExperience[] = [
     company: 'Mekari',
     role: 'Software Engineer Intern',
     logoPath: `${EXPERIENCE_PATH}/mekari.webp`,
-    logoWidth: 40,
-    logoHeight: 40,
+    logoWidth: 44,
+    logoHeight: 44,
     CompanyIcon: GiSevenPointedStar,
     companyIconSize: 23,
     duration: '(Feb. 2022 - May. 2022)',
@@ -190,8 +202,8 @@ export const experiences: IExperience[] = [
     company: 'Traveloka',
     role: 'Backend Engineer Intern',
     logoPath: `${EXPERIENCE_PATH}/traveloka.png`,
-    logoWidth: 40,
-    logoHeight: 40,
+    logoWidth: 45,
+    logoHeight: 45,
     CompanyIcon: ImAirplane,
     companyIconSize: 20,
     duration: '(Aug. 2021 - Jan. 2022)',
@@ -201,8 +213,8 @@ export const experiences: IExperience[] = [
     company: 'Sayurbox',
     role: 'Software Developer Engineer Intern',
     logoPath: `${EXPERIENCE_PATH}/sayurbox.png`,
-    logoWidth: 45,
-    logoHeight: 45,
+    logoWidth: 50,
+    logoHeight: 50,
     CompanyIcon: GiFruitBowl,
     companyIconSize: 23,
     duration: '(May. 2021 - Aug. 2021)',
@@ -213,8 +225,8 @@ export const experiences: IExperience[] = [
     company: 'Pinhome',
     role: 'Software Engineer Intern',
     logoPath: `${EXPERIENCE_PATH}/pinhome.png`,
-    logoWidth: 40,
-    logoHeight: 40,
+    logoWidth: 50,
+    logoHeight: 50,
     CompanyIcon: AiFillHome,
     companyIconSize: 23,
     duration: '(Jan. 2021 - Mar. 2021)',
@@ -289,7 +301,7 @@ export const achievements: IAchievement[] = [
   },
 ];
 
-const PROJECT_PATH = `${CDN_PATH}/projects`;
+const PROJECT_PATH = `${LOCAL_PATH}/projects`;
 
 export const projectData: IProject[] = [
   {
