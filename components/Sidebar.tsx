@@ -25,7 +25,7 @@ const Sidebar = () => {
       <div className='relative border-4 border-red-900 dark:border-cnc-yellow w-36 h-36 rounded-full mx-auto'
       >
         <Image
-          src='/images/mhasan01.webp'
+          src='/images/mhasan01-linkedin.webp'
           alt='image profile'
           className='rounded-full'
           height='160'
@@ -80,7 +80,7 @@ const Sidebar = () => {
         style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation size={18} />
-          <span>Jakarta, Indonesia</span>
+          <span>Dubai, United Arab Emirates</span>
         </div>
       </div>
       {/*  Email Button */}
