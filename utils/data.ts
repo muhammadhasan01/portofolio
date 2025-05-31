@@ -320,8 +320,8 @@ export const projectData: IProject[] = [
       'this website includes starting guide to compete in competitions including ' +
       'Competitive Programming, Capture The Flag, Data Science, UI/UX Competition, and Game Development',
     imagePath: `${PROJECT_PATH}/compete-hmif-tech-web.webp`,
-    deployedUrl: 'https://compete.hmif.tech/',
-    githubUrl: 'https://github.com/hmif-itb/compete.hmif.tech',
+    deployedUrl: 'https://compete.mhasan01.com/',
+    githubUrl: 'https://github.com/muhammadhasan01/compete.hmif.tech',
     keyTechs: ['React', 'NextJs', 'GatsbyJs', 'TailwindCSS', 'Markdown', 'LaTeX'],
   },
   {
