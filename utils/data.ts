@@ -154,6 +154,18 @@ const EXPERIENCE_PATH = `${LOCAL_PATH}/experiences`;
 export const experiences: IExperience[] = [
   {
 
+    company: 'Airwallex',
+    role: 'Software Engineer',
+    logoPath: `${EXPERIENCE_PATH}/airwallex.png`,
+    logoWidth: 40,
+    logoHeight: 30,
+    CompanyIcon: FaArtstation,
+    companyIconSize: 22,
+    duration: '(Dec. 2025 - Now)',
+    description: 'Working as a Software Engineer at Airwallex in Issuance Platform Transactions using Kotlin, PostgreSQL, and Google Cloud Platform',
+  },
+  {
+
     company: 'ByteDance',
     role: 'Software Engineer',
     logoPath: `${EXPERIENCE_PATH}/bytedance.png`,
@@ -161,7 +173,7 @@ export const experiences: IExperience[] = [
     logoHeight: 35,
     CompanyIcon: FaArtstation,
     companyIconSize: 22,
-    duration: '(Sep. 2024 - Now)',
+    duration: '(Sep. 2024 - Nov. 2025)',
     description: 'Working as a Backend Software Engineer at ByteDance building Internal Travel App using Golang, Java, and MySQL',
   },
   {

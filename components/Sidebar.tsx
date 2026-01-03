@@ -80,7 +80,7 @@ const Sidebar = () => {
         style={{ 'marginLeft': '-1rem', 'marginRight': '-1rem' }}>
         <div className='flex items-center justify-center space-x-2'>
           <GoLocation size={18} />
-          <span>Dubai, United Arab Emirates</span>
+          <span>Singapore</span>
         </div>
       </div>
       {/*  Email Button */}
