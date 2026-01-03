@@ -16,9 +16,10 @@ import Image from 'next/image';
 
 const Sidebar = () => {
 
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const currentTheme = resolvedTheme || theme;
   const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    setTheme(currentTheme === 'light' ? 'dark' : 'light');
   };
   return (
     <div>
@@ -98,7 +99,7 @@ const Sidebar = () => {
         py-2 my-2 flex items-center justify-center dark:text-cnc-yellow dark:bg-dark-500 focus:outline-none'
           onClick={changeTheme}
         >
-          {theme === 'light' ?
+          {currentTheme === 'light' ?
             <BsSunFill size={20} /> : <BsFillMoonFill size={20} />
           }
           <span className='mx-2 font-montserrat'>Toggle Theme</span>
