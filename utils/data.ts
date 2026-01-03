@@ -162,7 +162,7 @@ export const experiences: IExperience[] = [
     CompanyIcon: FaArtstation,
     companyIconSize: 22,
     duration: '(Dec. 2025 - Now)',
-    description: 'Working as a Software Engineer at Airwallex in Issuance Platform Transactions using Kotlin, PostgreSQL, and Google Cloud Platform',
+    description: 'Working as a Software Engineer in Issuance Platform Transactions using Kotlin, PostgreSQL, and Google Cloud Platform',
   },
   {
 
