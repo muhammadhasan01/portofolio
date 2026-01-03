@@ -19,7 +19,7 @@ const index = () => {
         </title>
       </Head>
       <div className='mb-3 font-medium text-large' id='about'>
-        I am a passionate software engineer constantly seeking new challenges and opportunities to grow. <br />
+        I am a software engineer constantly improving myself by developing skills and pursuing opportunities. <br />
         I excel in problem solving and have a deep understanding of algorithms and data structures,
         as evidenced by my past competitive programming awards. <br />
         I have gained diverse experience through work on various tools and projects for multiple companies,
