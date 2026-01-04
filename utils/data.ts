@@ -158,7 +158,7 @@ export const experiences: IExperience[] = [
     role: 'Software Engineer',
     logoPath: `${EXPERIENCE_PATH}/airwallex.png`,
     logoWidth: 40,
-    logoHeight: 30,
+    logoHeight: 28,
     CompanyIcon: FaArtstation,
     companyIconSize: 22,
     duration: '(Dec. 2025 - Now)',
