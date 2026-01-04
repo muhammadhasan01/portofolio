@@ -19,7 +19,7 @@ const index = () => {
         </title>
       </Head>
       <div className='mb-3 font-medium text-large' id='about'>
-        I am in a journey of constantly improving myself by developing skills and pursuing opportunities. <br />
+        I am on a journey of constantly improving myself by developing skills and pursuing opportunities. <br />
         I excel in problem solving and have a deep understanding of algorithms and data structures,
         as evidenced by my past competitive programming awards. <br />
         I have gained diverse experience through work on various tools and projects for multiple companies,
